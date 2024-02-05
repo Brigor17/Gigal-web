@@ -107,7 +107,7 @@ img {
 	width: 35px;
 	height: 35px;
 	position: absolute;
-	top: 10px;
+	top: 66px;
 	right: 10px;
 	transition: all .3s;
 	background: #444;
@@ -437,118 +437,4 @@ a.btn-customized.btn.btn-primary:not(:disabled):not(.disabled):active:focus {
 	display: inline-block;
 	width: 200px;
 	border-bottom: 1px dotted #aaa;
-}
-
-
-/***** Banner Principal *****/
-
-.bannerPrinc {
-	width: 100%;
-	padding: 60px 0 120px 0;
-	height: 100vh;
-}
-
-.bannerPrinc .contBackgP {
-	padding-top: 60px;
-	color: rgb(145, 122, 122);
-	background-image: url("/assets/img/Bancas-fondo.jpg");
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	width: 98%;
-	height: 80%;
-	margin-left: 1rem;
-	margin-top: 1rem;
-	position: relative;
-	border: 7px solid #655ec4;
-}
-
-.bannerPrinc .description {
-	margin: 30px 0 0 0;
-	padding-bottom: 30px;
-}
-
-.bannerPrinc .description p {
-	color: #fff;
-	color: rgba(255, 255, 255, 0.8);
-}
-
-.bannerPrinc .description a {
-	color: #fff;
-	color: rgba(255, 255, 255, 0.8);
-	border-color: #fff;
-	border-color: rgba(255, 255, 255, 0.8);
-}
-
-.bannerPrinc .description a:hover,
-.bannerPrinc .description a:focus {
-	color: #fff;
-	color: rgba(255, 255, 255, 0.8);
-}
-
-.imagenCircular {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 1fr 1fr;
-	grid-gap: 0px;
-	height: 50%;
-	bottom: 30%;
-	position: relative;
-	justify-items: center;
-}
-
-.grid-item {
-	align-self: center;
-	justify-self: center;
-}
-
-.tituloimg {
-	background-color: rgba(99, 94, 195, 0.7);
-	bottom: 5.7rem;
-	right: 0.1rem;
-	grid-column: 2 / span 1;
-	grid-row: 1 / span 1;
-	border-radius: 10px 20px 50px 50px;
-	height: 190%;
-	width: 12rem;
-	position: relative;
-}
-
-img.ImgF {
-	bottom: 51%;
-	width: 14rem;
-	height: auto;
-	border-radius: 50%;
-	grid-column: 2 / span 1;
-	grid-row: 2 / span 2;
-	position: relative;
-	align-self: center;
-	justify-self: center;
-	border: 5px solid #655ec4;
-}
-
-.BienvenidaP {
-	grid-column: 1 / span 1;
-	grid-row: 2 / span 1;
-}
-
-p.TextoP {
-	color: #fff;
-	font-family: 'teko', sans-serif;
-	font-size: 2rem;
-}
-
-p.SubtituloP {
-	color: #fff;
-	top: 1rem;
-	position: relative;
-}
-
-.Crecemos {
-	font-family: 'Seaweed script', cursive;
-	font-size: 4rem;
-	left: 4rem;
-	top: 1rem;
-	color: #655ec4;
-	position: relative;
 }

@@ -1,0 +1,186 @@
+/***** Banner Principal *****/
+
+.bannerPrinc {
+    width: 100%;
+    padding: 60px 0 120px 0;
+    height: 100vh;
+}
+
+.bannerPrinc .contBackgP {
+    padding-top: 60px;
+    color: rgb(145, 122, 122);
+    background-image: url("/assets/img/Bancas-fondo.jpg");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-mask: url(/assets/js/Onda.svg) no-repeat center center;
+    mask: url(/assets/js/Onda.svg) no-repeat center center;
+    width: 95vw;
+    height: 95vh;
+    top: -3.5rem;
+    margin-left: 0rem;
+    margin-top: 0rem;
+    position: relative;
+    border: 10px solid #655ec4;
+    border-style: outset;
+    animation: fondo 14s infinite ease-in-out;
+}
+
+.bannerPrinc .description {
+    margin: 30px 0 0 0;
+    padding-bottom: 30px;
+}
+
+.bannerPrinc .description p {
+    color: #fff;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.bannerPrinc .description a {
+    color: #fff;
+    color: rgba(255, 255, 255, 0.8);
+    border-color: #fff;
+    border-color: rgba(255, 255, 255, 0.8);
+}
+
+.bannerPrinc .description a:hover,
+.bannerPrinc .description a:focus {
+    color: #fff;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.imagenCircular {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 0px;
+    height: 50%;
+    bottom: 77%;
+    position: relative;
+    justify-items: center;
+}
+
+.grid-item {
+    align-self: center;
+    justify-self: center;
+}
+
+.tituloimg {
+    background-color: rgba(99, 94, 195, 0.7);
+    bottom: 5.7rem;
+    right: 0.1rem;
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
+    border-radius: 10px 20px 50px 50px;
+    height: 190%;
+    width: 12rem;
+    position: relative;
+}
+
+img.ImgF {
+    bottom: 51%;
+    width: 14rem;
+    height: auto;
+    border-radius: 50%;
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 2;
+    position: relative;
+    align-self: center;
+    justify-self: center;
+    border: 5px solid #655ec4;
+}
+
+.BienvenidaP {
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+}
+
+p.TextoP {
+    color: #fff;
+    font-family: 'teko', sans-serif;
+    font-size: 2rem;
+}
+
+p.SubtituloP {
+    color: #fff;
+    top: 1rem;
+    position: relative;
+}
+
+.Crecemos {
+    font-family: 'Seaweed script', cursive;
+    font-size: 4rem;
+    left: 4rem;
+    top: 2rem;
+
+    color: #655ec4;
+    position: relative;
+}
+
+/*-----Letras en Movimiento BIENVENIDO-------- */
+
+.playful span {
+    position: relative;
+    color: #00ad97;
+    text-shadow: textShadow(0.25, 6, #E485F8);
+    animation: scatter 1.75s infinite;
+}
+
+.playful span:nth-child(2n) {
+    color: #00ad97;
+    text-shadow: textShadow(0.25, 6, #F2A063);
+    animation-delay: 0.3s;
+}
+
+.playful span:nth-child(3n) {
+    color: #00ad97;
+    text-shadow: textShadow(0.25, 6, #6EC0A9);
+    animation-delay: 0.15s;
+}
+
+.playful span:nth-child(5n) {
+    color: #00ad97;
+    text-shadow: textShadow(0.25, 6, #E485F8);
+    animation-delay: 0.4s;
+}
+
+.playful span:nth-child(7n),
+.playful span:nth-child(11n) {
+    color: #00ad97;
+    text-shadow: textShadow(0.25, 6, #FF5555);
+    animation-delay: 0.25s;
+}
+
+.Bienvenido {
+    position: relative;
+    bottom: 8.4rem;
+    font-family: 'teko', 'sans-serif';
+}
+
+.Bienvenido .playful {
+    font-size: 80px;
+}
+
+/** TEXTO ANIMADO ESCRITO */
+
+.BienvenidaP h1:nth-child(1) {
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+    animation: type 2s steps(15, end) forwards;
+}
+
+.BienvenidaP h1::after {
+    top: -10px;
+    /* Ajusta estos valores según tus necesidades */
+    left: -10px;
+    width: calc(200% + 20px);
+    /* Asegúrate de que el ancho y el alto sean mayores que el de tu etiqueta h1 */
+    height: calc(150% + 20px);
+    z-index: -1;
+}
+
+.BienvenidaP h1:nth-child(1):hover {
+    animation: type 2s steps(15, end) infinite;
+    background-color: rgba(99, 94, 195, 0.1);
+}

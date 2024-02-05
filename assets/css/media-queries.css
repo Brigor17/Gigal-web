@@ -4,7 +4,7 @@
 
 @media screen and (max-width:970px) {
 	.Botones {
-		margin-top: 20px;
+		margin-top: 21px;
 		height: 100px;
 		min-width: 170px;
 		font-size: 30px;
@@ -230,7 +230,6 @@
 }
 
 @media screen and (max-width: 412px) {
-
 	.contLogo {
 		display: block;
 		position: absolute;
@@ -246,12 +245,18 @@
 	}
 
 	.tituloimg {
-		height: 100%;
+		height: 130%;
 		width: 8rem;
 		font-size: 20px;
 		bottom: 0;
 
 
+	}
+
+	img.ImgF {
+		bottom: 2rem;
+		width: 10rem;
+		height: auto;
 	}
 
 	p.TextoP {
@@ -266,9 +271,35 @@
 		position: relative;
 		font-size: 14px;
 	}
+
 	.Crecemos {
 		font-size: 40px;
 		top: 1rem;
 		left: 1rem;
 	}
+
+	/* LETRAS DE BIENVENIDA EN MOVIMIENTO */
+	.Bienvenido {
+		position: relative;
+		bottom: 8.4rem;
+		font-family: 'teko', 'sans-serif';
+	}
+
+	.Bienvenido .playful {
+		font-size: 50px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.BienvenidaP{
+		top: 10rem;
+    left: -2rem;
+    position: relative;
+	}
+	.Crecemos {
+		font-size: 80px;
+		height: 90px;
+		
+	}
+
 }
