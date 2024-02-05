@@ -516,18 +516,26 @@ img.ImgF {
 	border: 5px solid #655ec4 ;
 }
 
-p.BienvenidaP {
+.BienvenidaP {
 	grid-column: 1 / span 1;
 	grid-row: 2 / span 1;
 }
 
 p.TextoP{
 	color: #fff;
-	font-family: teko, sans-serif;
+	font-family: 'teko', sans-serif;
 	font-size: 2rem;
 }
 p.SubtituloP{
 	color: #fff;
 	top: 1rem;
+	position: relative;
+}
+p.Crecemos{
+	font-family: 'Seaweed script', cursive;
+	font-size: 4rem;
+	left: 4rem;
+	top: 1rem;
+	color: #655ec4;
 	position: relative;
 }
