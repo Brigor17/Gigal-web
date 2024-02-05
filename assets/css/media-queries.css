@@ -245,25 +245,28 @@
 	}
 
 	.tituloimg {
-		height: 130%;
-		width: 8rem;
-		font-size: 20px;
+		height: 7rem;
+		width: 5rem;
 		bottom: 0;
+		left: -3rem;
 
 
 	}
 
 	img.ImgF {
-		bottom: 2rem;
-		width: 10rem;
+		width: 5rem;
+		right: 3rem;
 		height: auto;
+	}
+	.imagenCircular{
+		bottom: 14rem;
 	}
 
 	p.TextoP {
-		font-size: 27px;
+		font-size: 18px;
 		position: absolute;
 		top: -29px;
-		left: 30px;
+		left: 18px;
 	}
 
 	p.SubtituloP {
@@ -287,19 +290,22 @@
 
 	.Bienvenido .playful {
 		font-size: 50px;
+		bottom: 8rem;
+		position: relative
 	}
 }
 
 @media (min-width: 1200px) {
-	.BienvenidaP{
+	.BienvenidaP {
 		top: 10rem;
-    left: -2rem;
-    position: relative;
+		left: -2rem;
+		position: relative;
 	}
+
 	.Crecemos {
 		font-size: 80px;
 		height: 90px;
-		
+
 	}
 
 }
