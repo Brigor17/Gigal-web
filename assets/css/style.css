@@ -76,7 +76,13 @@ img {
 	display: block;
 }
 
-
+.contLogo{
+	display: block;
+    position: absolute;
+    height: 100px;
+    width: 109px;
+    left: 150px;
+}
 /***** MENU DESPLAZABLE *****/
 
 .sidebar {
@@ -127,7 +133,16 @@ img {
 	display: inline-block;
 	width: 172px;
 	height: 34px;
-	background: url(../img/logo.png) left top no-repeat;
+	background-image: url(../img/IMG_20240204_133905_274.png) left top no-repeat;
+	border: 0;
+	color: #fff;
+	text-indent: -999999px;
+}
+.sidebar .logo .logoLink {
+	display: inline-block;
+	width: 172px;
+	height: 34px;
+	background: url(/assets/img/Logo.png) left top no-repeat;
 	border: 0;
 	text-indent: -999999px;
 }
@@ -433,11 +448,6 @@ a.btn-customized.btn.btn-primary:not(:disabled):not(.disabled):active:focus {
 	height: 100vh;
 }
 
-.bannerPrinc h1 {
-	padding-top: 60px;
-	color: rgb(145, 122, 122);
-}
-
 .bannerPrinc .contBackgP {
 	padding-top: 60px;
 	color: rgb(145, 122, 122);
@@ -450,7 +460,7 @@ a.btn-customized.btn.btn-primary:not(:disabled):not(.disabled):active:focus {
 	margin-left: 1rem;
 	margin-top: 1rem;
 	position: relative;
-	border: 7px solid #655ec4 ;
+	border: 7px solid #655ec4;
 }
 
 .bannerPrinc .description {
@@ -491,29 +501,30 @@ a.btn-customized.btn.btn-primary:not(:disabled):not(.disabled):active:focus {
 	align-self: center;
 	justify-self: center;
 }
+
 .tituloimg {
 	background-color: rgba(99, 94, 195, 0.7);
-    bottom: 5.7rem;
-    right: 0.1rem;
-    grid-column: 2 / span 1;
-    grid-row: 1 / span 1;
-    border-radius: 10px 20px 50px 50px;
-    height: 190%;
-    width: 12rem;
-    position: relative;
+	bottom: 5.7rem;
+	right: 0.1rem;
+	grid-column: 2 / span 1;
+	grid-row: 1 / span 1;
+	border-radius: 10px 20px 50px 50px;
+	height: 190%;
+	width: 12rem;
+	position: relative;
 }
 
 img.ImgF {
 	bottom: 51%;
-    width: 14rem;
-    height: auto;
-    border-radius: 50%;
-    grid-column: 2 / span 1;
-    grid-row: 2 / span 2;
-    position: relative;
-    align-self: center;
-    justify-self: center;
-	border: 5px solid #655ec4 ;
+	width: 14rem;
+	height: auto;
+	border-radius: 50%;
+	grid-column: 2 / span 1;
+	grid-row: 2 / span 2;
+	position: relative;
+	align-self: center;
+	justify-self: center;
+	border: 5px solid #655ec4;
 }
 
 .BienvenidaP {
@@ -521,17 +532,19 @@ img.ImgF {
 	grid-row: 2 / span 1;
 }
 
-p.TextoP{
+p.TextoP {
 	color: #fff;
 	font-family: 'teko', sans-serif;
 	font-size: 2rem;
 }
-p.SubtituloP{
+
+p.SubtituloP {
 	color: #fff;
 	top: 1rem;
 	position: relative;
 }
-p.Crecemos{
+
+.Crecemos {
 	font-family: 'Seaweed script', cursive;
 	font-size: 4rem;
 	left: 4rem;
