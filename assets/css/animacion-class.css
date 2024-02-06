@@ -9,8 +9,34 @@
     animation: roll-in-right 3s ease-out 1.2s both;
     opacity: 1;
 }
-.ImgC{
+
+.ImgC {
     animation: ImgC 15s infinite 2s ease-in;
     -webkit-animation: ImgC 15s infinite 2s ease-in;
     opacity: 1;
+}
+
+.zoomInLeft {
+    -webkit-animation: zoomInLeft;
+    animation: zoomInLeft 3s both 1s ease-in-out;
+    opacity: 1;
+}
+
+.zoomInUp {
+    -webkit-animation: zoomInUp;
+    animation: zoomInUp 3s both 1.5s ease-in-out;
+    opacity: 1;
+}
+.zoomInDown {
+    -webkit-animation: zoomInDown 3s both 1.3s ease-in-out;
+    animation: zoomInDown 3s both 1.3s ease-in-out;
+    opacity: 1;
+}
+.zoomInRight {
+    -webkit-animation: zoomInDown 3s both 1.3s ease-in-out;
+    animation: zoomInDown 3s both 2s ease-in-out;
+    opacity: 1;
+}
+.aparecer{
+    animation: aparecer 3s forwards;
 }

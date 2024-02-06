@@ -501,8 +501,14 @@
 
 	.ContMV {
 		left: 16%;
-		top: 45%
+		top: 45%;
+		height: 20rem;
 	}
 
+	/* SECCION 2 */
+
+	.ContText{
+		top: 23vh;
+	}
 
 }

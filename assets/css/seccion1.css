@@ -28,11 +28,8 @@
     height: 100%;
     position: relative;
     background-image: url(../img/seccion1/Circular1.png);
-
-    /* Redondea las esquinas hasta obtener un círculo */
     border-radius: 50%;
 
-    /* Añade un borde si lo deseas */
 }
 /* CARTA DE MISION Y VISION INTERCAMBIABLE */
     /* CONTENEDOR */
