@@ -89,6 +89,7 @@
 	.contain .pequeño .imag {
 		height: 300px;
 	}
+
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -98,6 +99,41 @@
 		height: 60px;
 		font-size: 32px;
 		line-height: 60px;
+	}
+
+	.BienvenidaP {
+		top: 6rem;
+		left: -2rem;
+		position: relative;
+		size: 30vw;
+
+	}
+
+	.Crecemos {
+		font-size: 80px;
+		height: 90px;
+
+	}
+
+	.seccion1 {
+		display: flex;
+		position: relative;
+		top: 0;
+	}
+
+	.Bienvenido .playful {
+		font-size: 4rem;
+		bottom: 12rem;
+		left: 16rem;
+		position: relative;
+	}
+
+	p.TextoP {
+		color: #fff;
+		font-family: 'teko', sans-serif;
+		font-size: 3rem;
+		position: relative;
+		top: 1rem;
 	}
 
 }
@@ -122,6 +158,35 @@
 		line-height: 50px;
 	}
 
+	.Bienvenido .playful {
+		font-size: 4rem;
+		bottom: 13rem;
+		left: 15rem;
+		position: relative;
+	}
+
+	p.TextoP {
+		color: #fff;
+		font-family: 'teko', sans-serif;
+		font-size: 3rem;
+		position: relative;
+		top: 1rem;
+	}
+
+	.Crecemos {
+		font-size: 4rem;
+		top: 9rem;
+		left: 0rem;
+	}
+
+	/* seccion 1 */
+	.ContMV {
+		width: 52vw;
+		height: 44vh;
+		top: 50%;
+		left: 6%;
+		overflow: auto;
+	}
 }
 
 @media (max-width: 767px) {
@@ -185,13 +250,51 @@
 		text-align: center;
 	}
 
+	.Bienvenido .playful {
+		font-size: 4rem;
+		bottom: 13rem;
+		position: relative;
+	}
+
+	.Crecemos {
+		font-size: 3rem;
+		top: 4rem;
+		left: 2rem;
+	}
+
+	/* SECCION 1 */
+	/* CONTENEDOR DE TEXTO */
+	.ContMV {
+		width: 52vw;
+		height: 44vh;
+		top: 50%;
+		left: 6%;
+		overflow: auto;
+	}
+
+	.textMV {
+		font-size: 0.75rem;
+		text-align: left;
+	}
+
+	.textMV-V {
+		font-size: 0.75rem;
+		text-align: left;
+		flex: 1 0 auto;
+	}
+
+	.BtnVis {
+		font-size: 12px;
+	}
+
+
 }
 
 @media (max-width: 575px) {
 
 	.Crecemos {
-		font-size: 40px;
-		top: -2rem;
+		font-size: 3rem;
+		top: 2rem;
 		left: 1rem;
 	}
 
@@ -227,6 +330,12 @@
 		top: 15px;
 	}
 
+	.Bienvenido .playful {
+		font-size: 3.6rem;
+		bottom: 10rem;
+		position: relative;
+	}
+
 }
 
 @media screen and (max-width: 412px) {
@@ -239,73 +348,144 @@
 		top: 15px;
 	}
 
+	.bannerPrinc {
+		display: flex;
+		flex-direction: column;
+		padding: 20px 10px 10px 10px;
+	}
+
 	.bannerPrinc .contBackgP {
 		width: 95%;
 		height: 50%;
+		position: initial;
+
+	}
+
+	.imagenCircular {
+		position: initial;
 	}
 
 	.tituloimg {
-		height: 7rem;
-		width: 5rem;
-		bottom: 0;
-		left: -3rem;
-
+		height: 8rem;
+		width: 11rem;
+		bottom: 3rem;
+		right: 11rem;
 
 	}
 
 	img.ImgF {
-		width: 5rem;
-		right: 3rem;
+		width: 11rem;
+		right: 11rem;
+		bottom: 6rem;
 		height: auto;
 	}
-	.imagenCircular{
+
+	.imagenCircular {
 		bottom: 14rem;
 	}
 
 	p.TextoP {
-		font-size: 18px;
+		font-size: 23px;
 		position: absolute;
-		top: -29px;
-		left: 18px;
+		top: 1rem;
+		left: 2rem;
 	}
 
 	p.SubtituloP {
 		top: 3.5rem;
 		position: relative;
-		font-size: 14px;
+		font-size: 1.2rem;
 	}
 
 	.Crecemos {
-		font-size: 40px;
-		top: 1rem;
-		left: 1rem;
+		font-size: 41px;
+		top: 3rem;
+		left: 3rem;
 	}
 
 	/* LETRAS DE BIENVENIDA EN MOVIMIENTO */
 	.Bienvenido {
 		position: relative;
-		bottom: 8.4rem;
+		bottom: 0rem;
 		font-family: 'teko', 'sans-serif';
 	}
 
 	.Bienvenido .playful {
-		font-size: 50px;
-		bottom: 8rem;
+		font-size: 2.6rem;
+		bottom: 0rem;
 		position: relative
 	}
+
+	/* SECCION 1*/
+	.seccion1 {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.ContImgVision {
+		flex: 0 0 auto;
+		border-radius: 50%;
+		border: #00ad97 solid 3px;
+		width: 60VW;
+		height: 30VH;
+		top: 20%;
+		left: 20%;
+		position: absolute;
+		transform: translate(-50%, -30%);
+	}
+
+	.ContMV {
+		width: 15rem;
+		height: 14rem;
+		top: 54%;
+		left: 15%;
+	}
+
+	.textMV {
+		font-size: 0.75rem;
+		text-align: left;
+	}
+
+	.textMV-V {
+		font-size: 0.75rem;
+		text-align: left;
+		flex: 1 0 auto;
+	}
+
+	.BtnVis {
+		font-size: 12px;
+	}
+
 }
 
 @media (min-width: 1200px) {
-	.BienvenidaP {
-		top: 10rem;
-		left: -2rem;
+	.Bienvenido .playful {
+		font-size: 4rem;
+		bottom: 10rem;
+		left: 28rem;
 		position: relative;
 	}
 
-	.Crecemos {
-		font-size: 80px;
-		height: 90px;
-
+	.bannerPrinc .contBackgP {
+		size: min(width 100% 1200px);
+		height: 90vh;
 	}
+
+	.Crecemos {
+		font-size: 3rem;
+		top: 10rem;
+		left: 25rem;
+	}
+
+	/* SECCION 1 */
+	.ContImgVision {
+		width: 35vw;
+	}
+
+	.ContMV {
+		left: 16%
+	}
+
 
 }

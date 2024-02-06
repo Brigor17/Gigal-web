@@ -438,3 +438,9 @@ a.btn-customized.btn.btn-primary:not(:disabled):not(.disabled):active:focus {
 	width: 200px;
 	border-bottom: 1px dotted #aaa;
 }
+
+/* CONTENEDOR SECCIONES */
+.secciones{
+	display: flex;
+	flex-direction: column;
+}

@@ -1,5 +1,9 @@
 /***** Banner Principal *****/
-
+.Banner{
+    size: min(width 100% 950px);
+    border: 2px black solid;
+    height: 100vh;
+}
 .bannerPrinc {
     width: 100%;
     padding: 60px 0 120px 0;
@@ -76,6 +80,9 @@
     width: 12rem;
     position: relative;
 }
+.tituloimg:hover{
+    background-color: rgba(0, 174, 154, 0.7);
+}
 
 img.ImgF {
     bottom: 51%;
@@ -87,7 +94,10 @@ img.ImgF {
     position: relative;
     align-self: center;
     justify-self: center;
-    border: 5px solid #655ec4;
+    border: 2px solid #655ec4;
+}
+img.ImgF:hover{
+    border: 2px solid #00ad97;
 }
 
 .BienvenidaP {
@@ -124,6 +134,9 @@ p.SubtituloP {
     color: #00ad97;
     text-shadow: textShadow(0.25, 6, #E485F8);
     animation: scatter 1.75s infinite;
+}
+.playful span:hover{
+    color: #655ec4;
 }
 
 .playful span:nth-child(2n) {
@@ -174,9 +187,9 @@ p.SubtituloP {
     top: -10px;
     /* Ajusta estos valores según tus necesidades */
     left: -10px;
-    width: calc(200% + 20px);
+    width: calc(200% + 90px);
     /* Asegúrate de que el ancho y el alto sean mayores que el de tu etiqueta h1 */
-    height: calc(150% + 20px);
+    height: calc(150% + 90px);
     z-index: -1;
 }
 

@@ -1,0 +1,11 @@
+.roll-in-left {
+    -webkit-animation: roll-in-left 2s ease-out 1s both;
+    animation: roll-in-left 2s ease-out 1s both;
+    opacity: 1;
+}
+
+.roll-in-right {
+    -webkit-animation: roll-in-right 3s ease-out 2s both;
+    animation: roll-in-right 3s ease-out 2s both;
+    opacity: 1;
+}
