@@ -1,67 +1,82 @@
+/* INTERCAMBIO DE IMAGENES */
 @keyframes fondo {
-    20% {
-        background-image: url("../img/slider/slider1.png");
-        background-size: cover;
-    }
+  20% {
+    background-image: url("../img/slider/slider1.png");
+    background-size: cover;
+  }
 
-    40% {
-        background-image: url("../img/slider/slider2.jpg");
-        background-size: cover;
-    }
+  40% {
+    background-image: url("../img/slider/slider2.jpg");
+    background-size: cover;
+  }
 
-    60% {
-        background-image: url("../img/slider/slider3.jpg");
-        background-size: cover;
-    }
+  60% {
+    background-image: url("../img/slider/slider3.jpg");
+    background-size: cover;
+  }
 }
+@keyframes ImgC {
+  20% {
+      background-image: url("../img/seccion1/Circular2.png");
+      background-size: cover;
+  }
+  100% {
+    background-image: url("../img/seccion1/Circular1.png");
+    background-size: cover;
+  }
+}
+
 /*******ANIMACION DE BIENVENIDA A CASA ********/
-@function textShadow($precision, $size, $color){
-    $value: null;
-    $offset: 0;
-    $length: $size * (1 / $precision) - 1;
-  
-    @for $i from 0 through $length {
-      $offset: $offset + $precision;
-      $shadow: $offset + px $offset + px $color;
-      $value: append($value, $shadow, comma);
-    }
-  
-    @return $value;
+@function textShadow($precision, $size, $color) {
+  $value: null;
+  $offset: 0;
+  $length: $size * (1 / $precision) - 1;
+
+  @for $i from 0 through $length {
+    $offset: $offset +$precision;
+    $shadow: $offset +px $offset +px $color;
+    $value: append($value, $shadow, comma);
   }
-  @keyframes scatter {
-    0% {
-      top: 0;
-    }
-    50% {
-      top: -10px;
-    }
-    100% {
-      top: 0;
-    }
+
+  @return $value;
+}
+
+@keyframes scatter {
+  0% {
+    top: 0;
   }
-  
+
+  50% {
+    top: -10px;
+  }
+
+  100% {
+    top: 0;
+  }
+}
+
 /* ESCRIURA */
 
 
 @keyframes type {
-    0% {
-        width: 0;
-    }
+  0% {
+    width: 0;
+  }
 
-    1%,
-    99% {
-        border-right: 1px solid orange;
-    }
+  1%,
+  99% {
+    border-right: 1px solid orange;
+  }
 
-    100% {
-        border-right: none;
-    }
+  100% {
+    border-right: none;
+  }
 }
 
 @keyframes blink {
-    50% {
-        border-color: transparent;
-    }
+  50% {
+    border-color: transparent;
+  }
 }
 
 /* TRANSICION de DESPLACE */
@@ -70,6 +85,7 @@
   from {
     clip-path: inset(100% 0 0 0);
   }
+
   to {
     clip-path: inset(0 0 0 0);
   }
@@ -82,45 +98,54 @@
 /* TRANSICION de APARECER */
 
 @keyframes aparecer {
-  0%   {opacity: 0;}
-  100% {opacity: 1;}
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes rollToCenter {
   0% {
     transform: translateX(0) rotate(0deg);
   }
+
   100% {
     transform: translateX(calc(50% - 50%)) rotate(360deg);
   }
 }
+
 /**
  * ----------------------------------------
  * animation GIROS
  * ----------------------------------------
  */
- @-webkit-keyframes roll-in-right {
+@-webkit-keyframes roll-in-right {
   0% {
     -webkit-transform: translateX(800px) rotate(540deg);
-            transform: translateX(800px) rotate(540deg);
+    transform: translateX(800px) rotate(540deg);
     opacity: 0;
   }
+
   100% {
     -webkit-transform: translateX(0) rotate(0deg);
-            transform: translateX(0) rotate(0deg);
-    opacity: 1;
-  }
-}
-@-webkit-keyframes roll-in-left {
-  0% {
-    -webkit-transform: translateX(-800px) rotate(-540deg);
-            transform: translateX(-800px) rotate(-540deg);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateX(0) rotate(0deg);
-            transform: translateX(0) rotate(0deg);
+    transform: translateX(0) rotate(0deg);
     opacity: 1;
   }
 }
 
+@-webkit-keyframes roll-in-left {
+  0% {
+    -webkit-transform: translateX(-800px) rotate(-540deg);
+    transform: translateX(-800px) rotate(-540deg);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: translateX(0) rotate(0deg);
+    transform: translateX(0) rotate(0deg);
+    opacity: 1;
+  }
+}

@@ -136,6 +136,18 @@
 		top: 1rem;
 	}
 
+	.ContMV {
+		top: 39%;
+		left: 12%;
+
+	}
+
+	.ContImgVision {
+		width: 45vw;
+		top: 7%;
+		left: 36%;
+	}
+
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -175,17 +187,21 @@
 
 	.Crecemos {
 		font-size: 4rem;
-		top: 9rem;
+		top: 7rem;
 		left: 0rem;
 	}
 
 	/* seccion 1 */
 	.ContMV {
-		width: 52vw;
+		width: 37vw;
 		height: 44vh;
 		top: 50%;
 		left: 6%;
-		overflow: auto;
+	}
+	.ContImgVision {
+		width: 45vw;
+		top: 15%;
+		left: 30%;
 	}
 }
 
@@ -484,7 +500,8 @@
 	}
 
 	.ContMV {
-		left: 16%
+		left: 16%;
+		top: 45%
 	}
 
 

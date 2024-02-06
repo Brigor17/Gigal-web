@@ -1,10 +1,12 @@
 // Selecciona los elementos que deseas animar
-let elementos = document.querySelectorAll('.ContImgVision, .ContMV');
+let elementos = document.querySelectorAll('.ContImgVision, .ContMV, .ImgMV');
 
 // Define las clases de animación
 let clasesAnimacion = {
   'ContImgVision': 'roll-in-right',
-  'ContMv': 'roll-in-left'
+  'ContMv': 'roll-in-left',
+  'ImgMv': 'ImgC'
+  
 };
 
 // Configura las opciones del observador
