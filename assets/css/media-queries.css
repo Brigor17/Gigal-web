@@ -144,8 +144,6 @@
 
 	.ContImgVision {
 		width: 45vw;
-		top: 7%;
-		left: 36%;
 	}
 
 }
@@ -198,6 +196,7 @@
 		top: 50%;
 		left: 6%;
 	}
+
 	.ContImgVision {
 		width: 45vw;
 		top: 15%;
@@ -205,6 +204,7 @@
 	}
 }
 
+/* RESOLUCION DISPOSITIVOS MOVILES */
 @media (max-width: 767px) {
 
 	.top-content {
@@ -303,7 +303,87 @@
 		font-size: 12px;
 	}
 
+	/* SECCION 2 */
+	.flexS2 {
+		display: grid;
+		grid-template-columns: 1.5fr 0.5fr;
+		grid-template-rows: 1fr;
+		grid-auto-columns: 1fr;
+		grid-auto-rows: 1fr;
+		gap: 5px 0px;
+		grid-auto-flow: row;
+		grid-template-areas:
+			"ContS2 ContDonacion";
+	}
 
+	.ContDonacion {
+		grid-area: ContDonacion;
+	}
+
+	.ContS2 {
+		display: grid;
+		grid-template-columns: 1fr 1.4fr;
+		grid-template-rows: 1.1fr 1fr;
+		gap: 2% 2%;
+		grid-auto-flow: row;
+		grid-template-areas:
+			"Cont1 Cont2"
+			"Cont3 ContText";
+		grid-area: ContS2;
+	}
+
+	.Cont1 {
+		grid-area: Cont1;
+		width: 100%;
+		height: 100%;
+		position: initial;
+		top: 0px;
+	}
+
+	.Cont2 {
+		grid-area: Cont2;
+		width: 100%;
+		height: 120%;
+		position: initial;
+		top: 0px;
+	}
+
+	.Cont3 {
+		grid-area: Cont3;
+		width: 100%;
+		height: 100%;
+		position: initial;
+		top: 0px;
+	}
+
+	.ContText {
+		grid-area: ContText;
+		width: 100%;
+    height: 80%;
+    /* position: initial; */
+    top: 20%;
+	}
+	.TextS2{
+		height: 80%;
+	}
+	.TextS2 p {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+		margin:0%;
+	}
+	.CBtnS2 {
+    margin-top: 0.5rem;
+    position: relative;
+    top: 0rem;
+	}
+	.Dcard{
+		width: 35vw;
+    height: 26vh;
+	}
+	.Dcard:hover {
+    height: 40vh;
+}
 }
 
 @media (max-width: 575px) {
@@ -422,14 +502,13 @@
 	/* LETRAS DE BIENVENIDA EN MOVIMIENTO */
 	.Bienvenido {
 		position: relative;
-		bottom: 0rem;
+		bottom: 5rem;
 		font-family: 'teko', 'sans-serif';
 	}
 
 	.Bienvenido .playful {
-		font-size: 2.6rem;
-		bottom: 0rem;
-		position: relative
+		font-size: 3rem;
+		position: initial;
 	}
 
 	/* SECCION 1*/
@@ -475,23 +554,24 @@
 
 }
 
+/* PANTALLA COMPLETA */
 @media (min-width: 1200px) {
 	.Bienvenido .playful {
 		font-size: 4rem;
 		bottom: 10rem;
-		left: 28rem;
+		left: 25rem;
 		position: relative;
 	}
 
 	.bannerPrinc .contBackgP {
-		size: min(width 100% 1200px);
-		height: 90vh;
+		width: 100vw;
+		height: 80vh;
 	}
 
 	.Crecemos {
-		font-size: 3rem;
-		top: 10rem;
-		left: 25rem;
+		font-size: 5rem;
+		top: 8rem;
+		left: 6rem;
 	}
 
 	/* SECCION 1 */
@@ -507,8 +587,85 @@
 
 	/* SECCION 2 */
 
-	.ContText{
-		top: 23vh;
+	.flexS2 {
+		display: grid;
+		grid-template-columns: 1.5fr 0.5fr;
+		grid-template-rows: 1fr;
+		grid-auto-columns: 1fr;
+		grid-auto-rows: 1fr;
+		gap: 5px 0px;
+		grid-auto-flow: row;
+		grid-template-areas:
+			"ContS2 ContDonacion";
 	}
+
+	.ContDonacion {
+		grid-area: ContDonacion;
+	}
+
+	.ContS2 {
+		display: grid;
+		grid-template-columns: 1fr 1.4fr;
+		grid-template-rows: 1.1fr 1fr;
+		gap: 2% 2%;
+		grid-auto-flow: row;
+		grid-template-areas:
+			"Cont1 Cont2"
+			"Cont3 ContText";
+		grid-area: ContS2;
+	}
+
+	.Cont1 {
+		grid-area: Cont1;
+		width: 100%;
+		height: 100%;
+		position: initial;
+		top: 0px;
+	}
+
+	.Cont2 {
+		grid-area: Cont2;
+		width: 100%;
+		height: 120%;
+		position: initial;
+		top: 0px;
+	}
+
+	.Cont3 {
+		grid-area: Cont3;
+		width: 100%;
+		height: 100%;
+		position: initial;
+		top: 0px;
+	}
+
+	.ContText {
+		grid-area: ContText;
+		width: 100%;
+    height: 80%;
+    /* position: initial; */
+    top: 20%;
+	}
+	.TextS2{
+		height: 80%;
+	}
+	.TextS2 p {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+		margin:0%;
+	}
+	.CBtnS2 {
+    margin-top: 0.5rem;
+    position: relative;
+    top: 0rem;
+	}
+	.Dcard{
+		width: 35vw;
+    height: 26vh;
+	}
+	.Dcard:hover {
+    height: 40vh;
+}
 
 }

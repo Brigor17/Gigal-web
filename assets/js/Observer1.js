@@ -26,8 +26,4 @@ let observer = new IntersectionObserver((entries, observer) => {
 }, {threshold: 0.4});
 
 let seccion1 = document.querySelector('.seccion1');
-
-elementos.forEach(seccion1 => {
-  observador.observe(seccion1);
-});
 observer.observe(seccion1);

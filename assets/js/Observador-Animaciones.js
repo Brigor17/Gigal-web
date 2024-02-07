@@ -1,5 +1,5 @@
 // Selecciona los elementos que deseas animar
-let elementos = document.querySelectorAll('.ContImgVision, .ContMV, .ImgMV, .Cont1, .Cont2, .Cont3, .ContText, .seccion2');
+let elementos = document.querySelectorAll('.ContImgVision, .ContMV, .ImgMV, .Cont1, .Cont2, .Cont3, .ContText, .seccion2, .Dcard');
 
 // Define las clases de animación
 let clasesAnimacion = {
@@ -10,7 +10,8 @@ let clasesAnimacion = {
   'Cont2': 'zoomInUp',
   'Cont3': 'zoomInDown',
   'ContText':'zoomInRight',
-  'seccion2':'aparecer'
+  'seccion2':'aparecer',
+  'Dcard': 'lightSpeedIn'
   
 };
 
@@ -18,7 +19,7 @@ let clasesAnimacion = {
 let opciones = {
   root: null, // El viewport del documento
   rootMargin: '0px',
-  threshold: 0.5 // El porcentaje del elemento que debe estar visible
+  threshold: 0.4 // El porcentaje del elemento que debe estar visible
 };
 
 // Define la función del observador

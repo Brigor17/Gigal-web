@@ -122,7 +122,7 @@
  * animation GIROS
  * ----------------------------------------
  */
-@-webkit-keyframes roll-in-right {
+@keyframes roll-in-right {
   0% {
     -webkit-transform: translateX(800px) rotate(540deg);
     transform: translateX(800px) rotate(540deg);
@@ -136,7 +136,7 @@
   }
 }
 
-@-webkit-keyframes roll-in-left {
+@keyframes roll-in-left {
   0% {
     -webkit-transform: translateX(-800px) rotate(-540deg);
     transform: translateX(-800px) rotate(-540deg);
@@ -148,8 +148,4 @@
     transform: translateX(0) rotate(0deg);
     opacity: 1;
   }
-}
-@keyframes aparecer {
-  0%   {opacity: 0;}
-  100% {opacity: 1;}
 }

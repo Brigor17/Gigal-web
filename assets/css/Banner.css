@@ -3,6 +3,8 @@
     size: min(width 100% 950px);
     border: 2px black solid;
     height: 100vh;
+    /* COLOR DEL FONDO DE PANTALLA */
+    background: linear-gradient(to top, #665ec4, #00ad97);
 }
 .bannerPrinc {
     width: 100%;
@@ -103,6 +105,13 @@ img.ImgF:hover{
 .BienvenidaP {
     grid-column: 1 / span 1;
     grid-row: 2 / span 1;
+    top: 6rem;
+    position: relative;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
 
 p.TextoP {
@@ -122,8 +131,11 @@ p.SubtituloP {
     font-size: 4rem;
     left: 4rem;
     top: 2rem;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
 
-    color: #655ec4;
+    color: #00ad97;
     position: relative;
 }
 
@@ -180,10 +192,10 @@ p.SubtituloP {
     white-space: nowrap;
     overflow: hidden;
     width: 100%;
-    animation: type 2s steps(15, end) forwards;
+    animation: type 8s steps(15, end) both;
 }
 
-.BienvenidaP h1::after {
+.BienvenidaP::after {
     top: -10px;
     /* Ajusta estos valores según tus necesidades */
     left: -10px;

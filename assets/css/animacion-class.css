@@ -38,5 +38,9 @@
     opacity: 1;
 }
 .aparecer{
-    animation: aparecer 3s forwards;
+    animation: aparecer 2s forwards;
 }
+.hinge {
+    -webkit-animation: hinge;
+    animation: hinge 3s forwards;
+  }
