@@ -102,7 +102,7 @@
 	}
 
 	.BienvenidaP {
-		top: 6rem;
+		top: 5rem;
 		left: -2rem;
 		position: relative;
 		size: 30vw;
@@ -148,7 +148,7 @@
 
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 990px) {
 
 	.section-description p {
 		padding: 0;
@@ -203,6 +203,7 @@
 		left: 30%;
 	}
 }
+
 
 /* RESOLUCION DISPOSITIVOS MOVILES */
 @media (max-width: 767px) {
@@ -359,31 +360,36 @@
 	.ContText {
 		grid-area: ContText;
 		width: 100%;
-    height: 80%;
-    /* position: initial; */
-    top: 20%;
+		height: 80%;
+		/* position: initial; */
+		top: 20%;
 	}
-	.TextS2{
+
+	.TextS2 {
 		height: 80%;
 	}
+
 	.TextS2 p {
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-		margin:0%;
+		width: 100%;
+		height: 100%;
+		overflow: auto;
+		margin: 0%;
 	}
+
 	.CBtnS2 {
-    margin-top: 0.5rem;
-    position: relative;
-    top: 0rem;
+		margin-top: 0.5rem;
+		position: relative;
+		top: 0rem;
 	}
-	.Dcard{
+
+	.Dcard {
 		width: 35vw;
-    height: 26vh;
+		height: 26vh;
 	}
+
 	.Dcard:hover {
-    height: 40vh;
-}
+		height: 40vh;
+	}
 }
 
 @media (max-width: 575px) {
@@ -431,6 +437,24 @@
 		bottom: 10rem;
 		position: relative;
 	}
+	.Bienvenida{
+		height: 17%;
+		width: 100%;
+		display: inline-flex;
+		align-items: center;
+		padding: 0px;
+		position: absolute;
+		top: 75%;
+    left: 3%;
+	}
+	.BienB{
+	
+		color: #00ad97;
+		margin: 0px;
+		font-size: 2.4rem;
+		animation: lightSpeedIn 3s both;
+		font-family: sans-serif;
+	}
 
 }
 
@@ -448,6 +472,18 @@
 		display: flex;
 		flex-direction: column;
 		padding: 20px 10px 10px 10px;
+	}
+	.BienvenidaP {
+		grid-column: 1 / span 1;
+		grid-row: 2 / span 1;
+		left: 3rem;
+		top: 7rem;
+		position: relative;
+		width: 100%;
+		height: 30%;
+		justify-content: center;
+		align-items: center;
+		display: flex;
 	}
 
 	.bannerPrinc .contBackgP {
@@ -567,11 +603,36 @@
 		width: 100vw;
 		height: 80vh;
 	}
+	.BienvenidaP{
+		position: relative;
+		top: 12rem;
+	}
 
 	.Crecemos {
 		font-size: 5rem;
-		top: 8rem;
-		left: 6rem;
+	}
+	.Bienvenida{
+		height: 46%;
+		width: 51vw;
+		display: inline-flex;
+		align-items: center;
+		padding: 0px;
+		margin: 0;
+		bottom: 0;
+		left: 50%;
+		position: absolute;
+	}
+	.BienB{
+	
+		color: #00ad97;
+		margin: 0px;
+		font-size: 4rem;
+		animation: lightSpeedIn 3s both;
+		font-family: sans-serif;
+	}
+	.BienB:hover{
+		font-size: 5rem;
+		transition: all 0.3s;
 	}
 
 	/* SECCION 1 */
@@ -642,30 +703,35 @@
 	.ContText {
 		grid-area: ContText;
 		width: 100%;
-    height: 80%;
-    /* position: initial; */
-    top: 20%;
+		height: 80%;
+		/* position: initial; */
+		top: 20%;
 	}
-	.TextS2{
+
+	.TextS2 {
 		height: 80%;
 	}
+
 	.TextS2 p {
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-		margin:0%;
+		width: 100%;
+		height: 100%;
+		overflow: auto;
+		margin: 0%;
 	}
+
 	.CBtnS2 {
-    margin-top: 0.5rem;
-    position: relative;
-    top: 0rem;
+		margin-top: 0.5rem;
+		position: relative;
+		top: 0rem;
 	}
-	.Dcard{
+
+	.Dcard {
 		width: 35vw;
-    height: 26vh;
+		height: 26vh;
 	}
+
 	.Dcard:hover {
-    height: 40vh;
-}
+		height: 40vh;
+	}
 
 }

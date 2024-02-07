@@ -10,6 +10,7 @@
     width: 100%;
     padding: 60px 0 120px 0;
     height: 100vh;
+    position: relative;
 }
 
 .bannerPrinc .contBackgP {
@@ -136,10 +137,9 @@ p.SubtituloP {
     padding: 0px;
 
     color: #00ad97;
-    position: relative;
 }
 
-/*-----Letras en Movimiento BIENVENIDO-------- */
+/*-----Letras en Movimiento BIENVENIDO-------- 
 
 .playful span {
     position: relative;
@@ -185,7 +185,7 @@ p.SubtituloP {
 .Bienvenido .playful {
     font-size: 80px;
 }
-
+*/
 /** TEXTO ANIMADO ESCRITO */
 
 .BienvenidaP h1:nth-child(1) {
@@ -208,4 +208,25 @@ p.SubtituloP {
 .BienvenidaP h1:nth-child(1):hover {
     animation: type 2s steps(15, end) infinite;
     background-color: rgba(99, 94, 195, 0.1);
+}
+.Bienvenida{
+    height: 46%;
+    width: 51vw;
+    display: inline-flex;
+    align-items: center;
+    padding: 0px;
+    margin: 0;
+    top: 126%;
+    left: 92%;
+    position: relative;
+}
+.BienB{
+
+    color: #00ad97;
+    margin: 0px;
+    font-size: 4rem;
+    animation: lightSpeedIn 3s both;
+    font-family: sans-serif;
+    
+
 }
