@@ -1,0 +1,11 @@
+.Final {
+    size: min(width 100% 950px);
+    height: 100vh;
+    opacity: 1;
+    position: relative;
+    /* COLOR DEL FONDO DE PANTALLA */
+    background-image: url(../img/svg/AboutBg.svg);
+    background-size: cover;
+    background-position: right;
+    /* *************************** */
+  }

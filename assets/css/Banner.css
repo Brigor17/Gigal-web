@@ -4,7 +4,6 @@
     border: 2px black solid;
     height: 100vh;
     /* COLOR DEL FONDO DE PANTALLA */
-    background: linear-gradient(to top, #665ec4, #00ad97);
 }
 .bannerPrinc {
     width: 100%;
@@ -15,7 +14,7 @@
 
 .bannerPrinc .contBackgP {
     padding-top: 60px;
-    color: rgb(145, 122, 122);
+    color: rgb(7, 3, 3);
     background-image: url("/assets/img/Bancas-fondo.jpg");
     background-size: 100%;
     background-position: center;
@@ -192,7 +191,7 @@ p.SubtituloP {
     white-space: nowrap;
     overflow: hidden;
     width: 100%;
-    animation: type 8s steps(15, end) both;
+    animation: type 2s steps(10, end) 1 both;
 }
 
 .BienvenidaP::after {
