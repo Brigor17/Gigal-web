@@ -15,12 +15,10 @@
 .bannerPrinc .contBackgP {
     padding-top: 60px;
     color: rgb(7, 3, 3);
-    background-image: url("/assets/img/Bancas-fondo.jpg");
+    background-image: url("../img/Bancas-fondo.jpg");
     background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
-    -webkit-mask: url(/assets/js/Onda.svg) no-repeat center center;
-    mask: url(/assets/js/Onda.svg) no-repeat center center;
     width: 95vw;
     height: 95vh;
     top: -3.5rem;
