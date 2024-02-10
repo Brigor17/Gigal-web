@@ -1,8 +1,9 @@
 // Selecciona los elementos que deseas animar
-let elementos = document.querySelectorAll('.ContImgVision, .ContMV, .ImgMV, .Cont1, .Cont2, .Cont3, .ContText, .seccion2, .Dcard');
+let elementos = document.querySelectorAll('.ContImgVision, .logoB, .ContMV, .ImgMV, .Cont1, .Cont2, .Cont3, .ContText, .seccion2, .Dcard, .containerB, .iconB');
 
 // Define las clases de animación
 let clasesAnimacion = {
+  'containerB': 'fondo',
   'ContImgVision': 'roll-in-right',
   'ContMv': 'roll-in-left',
   'ImgMv': 'ImgC',
@@ -11,7 +12,15 @@ let clasesAnimacion = {
   'Cont3': 'zoomInDown',
   'ContText':'zoomInRight',
   'seccion2':'aparecer',
-  'Dcard': 'lightSpeedIn'
+  'Dcard': 'lightSpeedIn',
+  'logoB': 'zoomInLeft',
+  'iconBP': 'roll-in-left',
+  'iconBI': 'zoomInUp',
+  'iconC':'zoomInUp2',
+  'iconH':'roll-in-right2',
+  'containerB': 'fondo',
+  
+
   
 };
 

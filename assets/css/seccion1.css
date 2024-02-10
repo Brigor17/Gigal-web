@@ -2,7 +2,7 @@
     size: min(width 100% 950px);
     height: 100vh;
     /* *************************** */
-    background: linear-gradient(to bottom, #665ec4, #00ad97);
+    background: linear-gradient(to bottom, #00ad97 50%, white 50%);
     /* COLOR DEL FONDO DE PANTALLA */
     position: relative;
 

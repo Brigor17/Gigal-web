@@ -3,6 +3,11 @@
 	margin: 0;
 	padding: 0;
   }
+:root{
+	--primary-color: #665ec4;
+	--secondary-color: #00ad97;
+	--dark-color-set: #221f36 ;
+} 
 body {
 	font-family: 'Roboto', sans-serif;
 	font-size: 16px;
@@ -128,7 +133,7 @@ img {
 }
 
 .sidebar .logo {
-	padding: 40px 20px;
+
 	border-bottom: 1px solid #444;
 	transition: all .3s;
 }
@@ -137,7 +142,7 @@ img {
 	display: inline-block;
 	width: 172px;
 	height: 34px;
-	background-image: url(../img/IMG_20240204_133905_274.png) left top no-repeat;
+	background-image: url('../img/IMG_20240204_133905_274.png') left top no-repeat;
 	border: 0;
 	color: #fff;
 	text-indent: -999999px;
@@ -146,7 +151,7 @@ img {
 	display: inline-block;
 	width: 172px;
 	height: 34px;
-	background: url(../img/Logo.png) left top no-repeat;
+	background: url('../img/Logo.png') left top no-repeat;
 	border: 0;
 	text-indent: -999999px;
 }

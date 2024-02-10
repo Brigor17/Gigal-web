@@ -89,6 +89,59 @@
 	.contain .pequeño .imag {
 		height: 300px;
 	}
+	#Final{
+		justify-content: flex-start;
+	}
+	.Final {
+		justify-content: flex-start;
+		/* Los contenedores se visualizan en vertical */
+		flex-direction: column;
+		max-height: 100%;
+	}
+
+	.Final>div,
+	.Foot {
+		margin-bottom: -3px;
+    
+		/* Cubren el elemento #Final en su totalidad sin salirse */
+		width: 100%;
+		box-sizing: border-box; /* Asegura que el padding y el borde no se añadan al ancho total */
+		align-items: center;
+	}
+
+	.Final,
+	.Foot {
+		position: initial;
+		/* La letra es adaptable al tamaño de los contenedores */
+		font-size: calc(3px + 2vmin);
+		/* Ajusta esto según sea necesario */
+	}
+	.FootNav ul{
+		margin-bottom: 0rem;
+		
+	}
+	.Final h2 {
+		font-weight: bold;
+		font-size: 180%;
+		color: #221f36
+	}
+
+	.Ubicación ul li a, .LinkR ul li a, .LinkP ul li a {
+    border-bottom: none;
+    color: #221f36;
+	}
+	.FinalUl{
+		margin-bottom: 0.2rem;
+	}
+	.Noved{
+		margin-bottom: 2px;
+		margin-left: 1rem;
+		width: 70%;
+	}
+	.messageBox {
+		width: fit-content;
+		height: 37px;
+	}	
 
 }
 
@@ -102,17 +155,7 @@
 	}
 
 	.BienvenidaP {
-		top: 5rem;
-		left: -2rem;
-		position: relative;
-		size: 30vw;
-
-	}
-
-	.Crecemos {
-		font-size: 80px;
-		height: 90px;
-
+		position: absolute;
 	}
 
 	.seccion1 {
@@ -121,19 +164,10 @@
 		top: 0;
 	}
 
-	.Bienvenido .playful {
-		font-size: 4rem;
-		bottom: 12rem;
-		left: 16rem;
-		position: relative;
-	}
-
 	p.TextoP {
 		color: #fff;
 		font-family: 'teko', sans-serif;
-		font-size: 3rem;
-		position: relative;
-		top: 1rem;
+		font-size: 2.8rem;
 	}
 
 	.ContMV {
@@ -143,7 +177,7 @@
 	}
 
 	.ContImgVision {
-		width: 45vw;
+		width: 60vh;
 	}
 
 }
@@ -198,7 +232,7 @@
 	}
 
 	.ContImgVision {
-		width: 45vw;
+		width: 60vh;
 		top: 15%;
 		left: 30%;
 	}
@@ -282,7 +316,7 @@
 	/* SECCION 1 */
 	/* CONTENEDOR DE TEXTO */
 	.ContMV {
-		width: 52vw;
+		width: 44vh;
 		height: 44vh;
 		top: 50%;
 		left: 6%;
@@ -394,12 +428,6 @@
 
 @media (max-width: 575px) {
 
-	.Crecemos {
-		font-size: 3rem;
-		top: 2rem;
-		left: 1rem;
-	}
-
 	.dismiss {
 		width: 55px;
 		height: 35px;
@@ -432,27 +460,32 @@
 		top: 15px;
 	}
 
-	.Bienvenido .playful {
-		font-size: 3.6rem;
-		bottom: 10rem;
-		position: relative;
-	}
-	.Bienvenida{
+	.Bienvenida {
 		height: 17%;
 		width: 100%;
 		display: inline-flex;
 		align-items: center;
 		padding: 0px;
 		position: absolute;
-		top: 75%;
-    left: 3%;
+		top: 50%;
+		left: 0%
 	}
-	.BienB{
-	
+
+	.BienB {
+
 		color: #00ad97;
 		margin: 0px;
-		font-size: 2.4rem;
-		animation: lightSpeedIn 3s both;
+		font-size: 15vw;
+		animation: lightSpeedIn 3s forwards;
+		font-family: sans-serif;
+	}
+
+	.BienB:active {
+
+		color: #00ad97;
+		margin: 0px;
+		font-size: 12vw;
+		animation: lightSpeedIn 3s forwards;
 		font-family: sans-serif;
 	}
 
@@ -473,17 +506,11 @@
 		flex-direction: column;
 		padding: 20px 10px 10px 10px;
 	}
+
 	.BienvenidaP {
-		grid-column: 1 / span 1;
-		grid-row: 2 / span 1;
-		left: 3rem;
-		top: 7rem;
-		position: relative;
+		position: initial;
 		width: 100%;
 		height: 30%;
-		justify-content: center;
-		align-items: center;
-		display: flex;
 	}
 
 	.bannerPrinc .contBackgP {
@@ -498,22 +525,26 @@
 	}
 
 	.tituloimg {
-		height: 8rem;
-		width: 11rem;
-		bottom: 3rem;
-		right: 11rem;
+		height: 20%;
+		width: 50%;
+		bottom: 51%;
+		right: 25%;
 
 	}
 
 	img.ImgF {
 		width: 11rem;
-		right: 11rem;
-		bottom: 6rem;
+		right: 25%;
+		bottom: 44%;
 		height: auto;
+		position: absolute;
 	}
 
 	.imagenCircular {
-		bottom: 14rem;
+		height: 40%;
+		display: flex;
+		position: relative;
+		flex-direction: column;
 	}
 
 	p.TextoP {
@@ -530,21 +561,7 @@
 	}
 
 	.Crecemos {
-		font-size: 41px;
-		top: 3rem;
-		left: 3rem;
-	}
-
-	/* LETRAS DE BIENVENIDA EN MOVIMIENTO */
-	.Bienvenido {
-		position: relative;
-		bottom: 5rem;
-		font-family: 'teko', 'sans-serif';
-	}
-
-	.Bienvenido .playful {
-		font-size: 3rem;
-		position: initial;
+		font-size: 15vw;
 	}
 
 	/* SECCION 1*/
@@ -558,7 +575,7 @@
 		flex: 0 0 auto;
 		border-radius: 50%;
 		border: #00ad97 solid 3px;
-		width: 60VW;
+		width: 30vh;
 		height: 30VH;
 		top: 20%;
 		left: 20%;
@@ -588,22 +605,82 @@
 		font-size: 12px;
 	}
 
+	.flexS2 {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 1em;
+		width: 100%;
+		position: initial;
+		height: 100%;
+	}
+
+	.ContS2 {
+		width: 90%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 1em;
+		/* Ajusta este valor según tus necesidades */
+		flex: 0.8;
+		/* 80% del tamaño total */
+		border-radius: 10px;
+		/* Bordes redondeados */
+	}
+
+	.ContDonacion {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex: 0.2;
+		/* 20% del tamaño total */
+		border-radius: 10px;
+		/* Bordes redondeados */
+	}
+
+	.Dcard {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		height: 100%;
+		position: inherit;
+	}
+
+	.Cont1 {
+		border-radius: 50%;
+		/* Forma circular */
+	}
+
+	.Cont2,
+	.Cont3,
+	.ContText {
+		border-radius: 10px;
+		/* Bordes redondeados */
+		width: 100%;
+		height: 100%;
+		position: initial;
+	}
+
+
 }
 
 /* PANTALLA COMPLETA */
 @media (min-width: 1200px) {
-	.Bienvenido .playful {
+	/* .Bienvenido .playful {
 		font-size: 4rem;
 		bottom: 10rem;
 		left: 25rem;
 		position: relative;
-	}
+	} */
 
-	.bannerPrinc .contBackgP {
+	/* .bannerPrinc .contBackgP {
 		width: 100vw;
 		height: 80vh;
-	}
-	.BienvenidaP{
+	} */
+	/* .BienvenidaP{
 		position: relative;
 		top: 12rem;
 	}
@@ -634,17 +711,19 @@
 		font-size: 5rem;
 		transition: all 0.3s;
 	}
+*/
 
 	/* SECCION 1 */
 	.ContImgVision {
-		width: 35vw;
+		width: 60vh;
 	}
 
 	.ContMV {
 		left: 16%;
-		top: 45%;
+		top: 50%;
 		height: 20rem;
 	}
+
 
 	/* SECCION 2 */
 

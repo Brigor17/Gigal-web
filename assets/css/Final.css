@@ -1,11 +1,265 @@
-.Final {
+#Final {
     size: min(width 100% 950px);
-    height: 100vh;
     opacity: 1;
     position: relative;
     /* COLOR DEL FONDO DE PANTALLA */
     background-image: url(../img/svg/AboutBg.svg);
     background-size: cover;
     background-position: right;
-    /* *************************** */
+    /* *************************** */  
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100vh; 
   }
+  
+  .Final {
+    display: flex;
+    justify-content: space-between; /* Espaciado adaptable entre contenedores */
+    
+    /* Altura adaptable con un máximo del 50% de .Final */
+    height: auto;
+    max-height: 50%;
+  }
+  
+  .Final > div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+  }
+  
+  .Foot {
+    border-top: 2px #2a2f63 solid; 
+    display: flex;
+    justify-content: flex-end;
+    
+    /* Altura adaptable con un máximo del 5% o 10% de .Final */
+    height: auto;
+    max-height: 10%; /* Ajusta esto según sea necesario */
+  }
+  .FotNav {
+    display: flex;
+    list-style-type: none; /* Elimina las viñetas de la lista */
+    padding: 0;
+  }
+  
+  .FotNav > li {
+    margin-right: 20px;
+  }
+  .Ubicación ul li,
+.LinkR ul li,
+.LinkP ul li {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* ESTILOS DE ETIQUETA a */
+.Ubicación ul li a,
+.LinkR ul li a,
+.LinkP ul li a {
+  border-bottom: none;
+  color: white;
+  margin-left: 10PX;
+}
+/* ICONO DE LAS LISTAS */
+.iconoF {
+  /* Añade un margen a la derecha del icono */
+   /* Ajusta esto según sea necesario */
+}
+
+/* COLOR DE ICONO DE LISTA */
+
+.Final ul li,
+.Final h2 {
+  color: #2a2f63; 
+  margin-right: 10px;
+}
+
+/* COLOR DE ENLACE DE LISTA */
+.FotNav li a{
+  color: white; 
+  margin-left: 20px ;
+}
+
+.Final h2 {
+  font-weight: bold;
+  font-size: 100%; /* Títulos en negrita */
+}
+.Noved{
+  color: white;
+  text-align: left;
+}
+
+/* CUADRO DE REDES SOCIALES */
+
+.parent {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.child {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease-in-out;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+
+.child:hover {
+  background-color: white;
+  background-position: -100px 100px, -100px 100px;
+  transform: rotate3d(0.5, 1, 0, 30deg);
+  transform: perspective(180px) rotateX(60deg) translateY(2px);
+  box-shadow: 0px 10px 10px rgb(1, 49, 182);
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  font-size: 20px;
+}
+
+.button:hover {
+  width: inherit;
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate3d(0px, 0px, 15px) perspective(180px) rotateX(-35deg) translateY(2px);
+  border-radius: 50%;
+}
+/* ICONOS DE REDES SOCIALES */
+
+.fa-twitter{
+  color: lightblue;
+}
+.fa-instagram{
+  color: rgb(183, 48, 158);
+}
+.fa-whatsapp{
+  color: rgb(11, 206, 11);
+}
+.fa-facebook-f{
+  color: rgb(59, 79, 209);
+}
+
+/* INPUT DE NOVEDADES */
+
+.messageBox {
+  width: fit-content;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #221f36;
+  padding: 0 15px;
+  border-radius: 10px;
+  border: 1px solid rgb(63, 63, 63);
+}
+.messageBox:focus-within {
+  border: 1px solid #221f36;
+}
+.fileUploadWrapper {
+  width: fit-content;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#file {
+  display: none;
+}
+.fileUploadWrapper label {
+  cursor: pointer;
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.fileUploadWrapper label svg {
+  height: 18px;
+}
+.fileUploadWrapper label svg path {
+  transition: all 0.3s;
+}
+.fileUploadWrapper label svg circle {
+  transition: all 0.3s;
+}
+.fileUploadWrapper label:hover svg path {
+  stroke: #fff;
+}
+.fileUploadWrapper label:hover svg circle {
+  stroke: #fff;
+  fill: #3c3c3c;
+}
+.fileUploadWrapper label:hover .tooltip {
+  display: block;
+  opacity: 1;
+}
+.tooltip {
+  position: absolute;
+  top: -40px;
+  display: none;
+  opacity: 0;
+  color: white;
+  font-size: 10px;
+  text-wrap: nowrap;
+  background-color: rgb(200, 33, 33);
+  padding: 6px 10px;
+  border: 1px solid #924141;
+  border-radius: 5px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.596);
+  transition: all 0.3s;
+}
+#messageInput {
+  width: 200px;
+  height: 100%;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  padding-left: 10px;
+  color: white;
+}
+#messageInput:focus ~ #sendButton i,
+#messageInput:valid ~ #sendButton i {
+  fill: #b02424;
+  stroke: white;
+}
+
+#sendButton {
+  width: fit-content;
+  height: 100%;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+#sendButton i {
+  color: #655ec4;
+  height: 18px;
+  transition: all 0.3s;
+}
+#sendButton i {
+  transition: all 0.3s;
+}
+#sendButton:hover i {
+ color: #00ad97;
+  stroke: white;
+}

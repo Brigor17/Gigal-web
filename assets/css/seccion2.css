@@ -44,6 +44,21 @@
   top: 0%;
 
 }
+.Cont3 :hover{
+    color: var(--secondary-color);
+    box-shadow: 0 0px 20px var(--primary-color);
+    transform: scale(1.1);
+}
+.Cont1 :hover{
+  color: var(--secondary-color);
+  box-shadow: 0 0px 20px var(--primary-color);
+  transform: scale(1.1);
+}
+.Cont2 :hover{
+  color: var(--secondary-color);
+  box-shadow: 0 0px 20px var(--primary-color);
+  transform: scale(1.1);
+}
 
 .Cont1 {
   border-radius: 50%;

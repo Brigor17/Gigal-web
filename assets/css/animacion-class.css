@@ -9,6 +9,11 @@
     animation: roll-in-right 3s ease-out 1.2s both;
     opacity: 1;
 }
+.roll-in-right2 {
+    -webkit-animation: roll-in-right 3s ease-out 4s both;
+    animation: roll-in-right 3s ease-out 4s both;
+    opacity: 1;
+}
 
 .ImgC {
     animation: ImgC 15s infinite 2s ease-in;
@@ -25,6 +30,11 @@
 .zoomInUp {
     -webkit-animation: zoomInUp;
     animation: zoomInUp 3s both 1.5s ease-in-out;
+    opacity: 1;
+}
+.zoomInUp2 {
+    -webkit-animation: zoomInUp;
+    animation: zoomInUp 3.5s both 2.5s ease-in-out;
     opacity: 1;
 }
 .zoomInDown {
