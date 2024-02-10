@@ -18,7 +18,6 @@ let clasesAnimacion = {
   'iconBI': 'zoomInUp',
   'iconC':'zoomInUp2',
   'iconH':'roll-in-right2',
-  'containerB': 'fondo',
   
 
   
