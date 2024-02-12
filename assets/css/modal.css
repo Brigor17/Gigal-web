@@ -21,6 +21,7 @@ dialog::backdrop{
     background-image: url('../img/modal/Modal.png');
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
+    -o-object-fit: cover;
 }
 
 /* Estilos para el botón de cierre */

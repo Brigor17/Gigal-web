@@ -71,19 +71,18 @@
   color: white;
   margin-left: 10PX;
 }
-.Ubicación ul li:hover,
 .LinkR ul li:hover,
 .LinkP ul li:hover {
   /* Aquí puedes agregar los estilos que quieras para el efecto hover */
   color: var(--secondary-color);
-  font-size: 1.5rem;
+  transform: scale(1.2);
 }
 .Ubicación ul li a:hover,
 .LinkR ul li a:hover,
 .LinkP ul li a:hover {
   /* Aquí puedes agregar los estilos que quieras para el efecto hover */
   color: yellow;
-  font-size: 1.5rem;
+  transform: scale(1.2);
 }
 /* ICONO DE LAS LISTAS */
 
