@@ -4,12 +4,14 @@
 	padding: 0;
   }
 :root{
+/* COLORES DE LA PALETA UILIZADA */
 	--primary-color: #665ec4;
 	--secondary-color: #00ad97;
 	--dark-color-set: #221f36 ;
 } 
 body {
-	font-family: 'Roboto', sans-serif;
+/* FUENTE DE LA PALETA UTILIZADA */
+	font-family: Arial, Helvetica, sans-serif;
 	font-size: 16px;
 	font-weight: 300;
 	color: #888;
@@ -136,6 +138,7 @@ img {
 
 	border-bottom: 1px solid #444;
 	transition: all .3s;
+	height: 10rem;
 }
 
 .sidebar .logo a {
@@ -147,10 +150,15 @@ img {
 	color: #fff;
 	text-indent: -999999px;
 }
+.sidebar .logo h3 {
+	height: 100%;
+    font-weight: 300;
+    color: #555;
+}
 .sidebar .logo .logoLink {
 	display: inline-block;
-	width: 172px;
-	height: 34px;
+	width: 100%;
+	height: 100%;
 	background: url('../img/Logo.png') left top no-repeat;
 	border: 0;
 	text-indent: -999999px;
@@ -402,8 +410,13 @@ a.btn-customized.btn.btn-primary:not(:disabled):not(.disabled):active:focus {
 /***** General style, all sections *****/
 
 .section-container {
-	margin: 0 auto;
-	padding-bottom: 80px;
+
+}
+.section-4-container {
+	background-image: url('../img/svg/AboutBg.svg');
+    background-size: cover;
+    background-position: right;
+
 }
 
 .section-container-gray-bg {

@@ -15,11 +15,13 @@
     background-size: cover;
   }
 }
+
 @keyframes ImgC {
   20% {
-      background-image: url("../img/seccion1/Circular2.png");
-      background-size: cover;
+    background-image: url("../img/seccion1/Circular2.png");
+    background-size: cover;
   }
+
   100% {
     background-image: url("../img/seccion1/Circular1.png");
     background-size: cover;
@@ -27,20 +29,6 @@
 }
 
 /*******ANIMACION DE BIENVENIDA A CASA ********/
-@function textShadow($precision, $size, $color) {
-  $value: null;
-  $offset: 0;
-  $length: $size * (1 / $precision) - 1;
-
-  @for $i from 0 through $length {
-    $offset: $offset +$precision;
-    $shadow: $offset +px $offset +px $color;
-    $value: append($value, $shadow, comma);
-  }
-
-  @return $value;
-}
-
 @keyframes scatter {
   0% {
     top: 0;
@@ -73,6 +61,84 @@
   }
 }
 
+@keyframes shadow-drop-center {
+  0% {
+    box-shadow: 0 0 0 0 transparent
+  }
+
+  100% {
+    box-shadow: 0 0 20px 0 rgba(26, 20, 20, 0.55)
+  }
+}
+
+/* ANIMACION DE ESCRIURA  */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 8em;
+  }
+}
+
+@keyframes vibrate {
+  0% {
+    transform: translate(0)
+  }
+
+  20% {
+    transform: translate(-2px, 2px)
+  }
+
+  40% {
+    transform: translate(-2px, -2px)
+  }
+
+  60% {
+    transform: translate(2px, 2px)
+  }
+
+  80% {
+    transform: translate(2px, -2px)
+  }
+
+  100% {
+    transform: translate(0)
+  }
+}
+
+@keyframes scale-up-horizontal-right {
+  0% {
+    transform: scaleX(.4);
+    transform-origin: right center
+  }
+
+  50% {
+    transform: scaleX(1);
+    transform-origin: right center;
+  }
+
+  100% {
+    transform: scaleX(1);
+    transform-origin: right center
+  }
+}
+
+@keyframes blink-caret {
+
+  from,
+  to {
+    border-color: transparent;
+  }
+
+  /* COLOR DEL ICONO DE ESCRITURA */
+  50% {
+    border-color: transparent;
+  }
+}
+
+
 @keyframes blink {
   50% {
     border-color: transparent;
@@ -104,6 +170,16 @@
 
   100% {
     opacity: 1;
+  }
+}
+
+@keyframes scale-up-center {
+  0% {
+    transform: scale(.5)
+  }
+
+  100% {
+    transform: scale(1)
   }
 }
 

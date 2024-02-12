@@ -1,9 +1,12 @@
-// Selecciona los elementos que deseas animar
-let elementos = document.querySelectorAll('.ContImgVision, .logoB, .ContMV, .ImgMV, .Cont1, .Cont2, .Cont3, .ContText, .seccion2, .Dcard, .containerB, .iconB');
+// Selecciona los elementos que deseas animar POR CLASES CSS
+let elementos = document.querySelectorAll('.ContImgVision, .logoB, .texto, .div2, .div3, .ContMV, .ImgMV, .Cont1, .Cont2, .Cont3, .ContText, .seccion2, .Dcard, .titleB, .subtitleB, .containerB, .iconB');
 
-// Define las clases de animación
+// Define las clases de animación AGREGAR EL ID SEGUIDO DE LA ANIMACION A UTILIZAR
 let clasesAnimacion = {
   'containerB': 'fondo',
+  'texto':'typing',
+  'div2':'scale-up-horizontal-right',
+  'div3':'scale-up-center',
   'ContImgVision': 'roll-in-right',
   'ContMv': 'roll-in-left',
   'ImgMv': 'ImgC',
@@ -13,6 +16,8 @@ let clasesAnimacion = {
   'ContText':'zoomInRight',
   'seccion2':'aparecer',
   'Dcard': 'lightSpeedIn',
+  'titleB': 'lightSpeedIn',
+  'subtitleB': 'zoomInDown',
   'logoB': 'zoomInLeft',
   'iconBP': 'roll-in-left',
   'iconBI': 'zoomInUp',

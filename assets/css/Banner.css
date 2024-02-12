@@ -32,8 +32,8 @@
 
 .logoB{
     position: absolute;
-    top: 20px;
-    right: 20px;
+    top: 8%;
+    right: 10%;
     width: 100px;
     height: 100px;
     background-image: url("../img/Logo.png");
@@ -69,12 +69,20 @@
     text-align: center;
     margin-bottom: 20px;
 }
+.titleB:hover{
+    font-size: 55px;
+    transition: all 0.5s;
+}
 
 .subtitleB {
     color: white;
     font-size: 24px;
     text-align: center;
     margin-bottom: 40px;
+}
+.subtitleB:hover{
+  font-size: 28px;
+  transition: all 0.5s;
 }
 
 .buttonB {
@@ -94,7 +102,7 @@
 }
 
 .button-readB {
-    background-color: #00cc99;
+    background-color: var(--secondary-color);
 }
 
 .iconsB{
@@ -141,7 +149,7 @@
 }
 
 .iconB-image i {
-    color: #00cc99;
+    color: var(--secondary-color);
     font-size: 3.5rem;
 }
 

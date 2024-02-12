@@ -9,6 +9,23 @@
     animation: roll-in-right 3s ease-out 1.2s both;
     opacity: 1;
 }
+.typing {
+    -webkit-animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+    animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+    opacity: 1;
+}
+.scale-up-horizontal-right {
+    animation: scale-up-horizontal-right 1.5s linear 1s infinite 
+}
+
+.shadow-drop-center {
+    animation: shadow-drop-center 3s linear infinite
+}
+.scale-up-center{animation:scale-up-center 2s; } 
+
+.vibrate {
+    animation: vibrate 1.5s linear forwards
+}
 .roll-in-right2 {
     -webkit-animation: roll-in-right 3s ease-out 4s both;
     animation: roll-in-right 3s ease-out 4s both;

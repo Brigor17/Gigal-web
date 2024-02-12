@@ -1,0 +1,64 @@
+/* Estilos para el modal */
+dialog {
+    width: 60vw; 
+    height: 60vh;
+    position: fixed;
+    top: 20vh;
+    left: 20vw;
+    padding: 0;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+	border-radius: 20px;
+}
+dialog::backdrop{
+	background-color: rgba(0,0,0,.55);
+}
+
+/* Estilos para la imagen */
+.modal-image {
+	width: 100%;
+	height: 100%;
+    background-image: url('../img/modal/Modal.png');
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+/* Estilos para el botón de cierre */
+.close {
+    position: absolute;
+    top: 3%;
+    right: 3%;
+    background: white;
+    border: none;
+    font-size: 2em;
+    padding: 0;
+    line-height: 1em;
+}
+
+/* Estilos para los botones de navegación */
+.prev, .next {
+    position: absolute;
+    bottom: 0;
+    background: transparent;
+    border: none;
+    font-size: 2rem;
+    padding: 10px;
+}
+.prev:hover, .next:hover {
+    position: absolute;
+    bottom: 0;
+	color: var(--primary-color);
+    background: rgba(0,0,0,.55);
+    border: none;
+    font-size: 2.2rem;
+    padding: 10px;
+	transition: all 0.5s;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}

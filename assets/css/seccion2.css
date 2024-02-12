@@ -95,6 +95,7 @@
   width: 100%;
   height: 80%;
   top: 20%;
+  animation-delay: 2s;
 
 }
 
@@ -106,7 +107,7 @@
 .TextS2 p {
   width: 100%;
   font-size: clamp(0.2rem, 0.8rem, 1rem);
-  text-align: left;
+  text-align: justify;
   height: 100%;
   overflow: auto;
   margin: 0%;
@@ -142,7 +143,6 @@
 
 /* BOTON */
 .CBtnS2 {
-  margin-top: 0.5rem;
   position: relative;
   top: 0rem;
 }
@@ -228,15 +228,15 @@
   animation-delay: 2s;
 }
 
-.Dicon {
+.DiconB {
   margin: 0 auto;
   width: 100%;
   height: 80px;
   max-width: 80px;
-  background: linear-gradient(90deg, #655ec4 0%, #00ad97 40%, #221f36 60%);
+  background: linear-gradient(90deg, var(--primary-color) 0%, var(--secondary-color) 40%, var(--dark-color-set) 60%);
   border-radius: 100%;
   display: flex;
-  color: #221f36;
+  color: var(--dark-color-set);
   justify-content: center;
   align-items: center;
   transition: all 0.8s ease;
@@ -244,8 +244,8 @@
   background-size: 200px;
 }
 
-.Dicon .Dicon1 {
-  fill: rgb(196, 0, 0);
+.icon1 {
+fill: red;
 }
 
 .Dcard .Dtitle {
@@ -253,7 +253,7 @@
   margin: 0;
   text-align: center;
   margin-top: 30px;
-  color: #221f36;
+  color: var(--dark-color-set);
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 4px;
@@ -284,26 +284,26 @@
   max-height: 40px;
 }
 
-.Dcard:hover .Dicon {
+.Dcard:hover .DiconB {
   background-position: -120px;
-  color: #00ad97;
+  color: var(--secondary-color);
   transition: all 0.3s ease;
 }
 
-.Dcard:hover .Dicon .Dicon1 {
-  fill: #00ad97;
+.Dcard:hover .DiconB .icon1 {
+  fill: var(--secondary-color);
   transition: all 0.3s ease;
 }
 
 /* BOTON */
 .btn-success {
-  background-color: #00ad97;
-  border-color: #00ad97;
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
 
 }
 
 .btn-success:hover {
-  background-color: #655ec4;
-  border-color: #655ec4;
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
 
 }

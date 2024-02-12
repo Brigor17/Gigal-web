@@ -2,7 +2,7 @@
     size: min(width 100% 950px);
     height: 100vh;
     /* *************************** */
-    background: linear-gradient(to bottom, #00ad97 50%, white 50%);
+    background: linear-gradient(to bottom, var(--secondary-color) 50%, white 50%);
     /* COLOR DEL FONDO DE PANTALLA */
     position: relative;
 
@@ -10,7 +10,7 @@
 /* CONTENEDOR IMAGEN CIRCULAR */
 .ContImgVision {
     border-radius: 50%;
-    border: #00ad97 solid 3px;
+    border: var(--secondary-color) solid 3px;
     width: 60vw;
     height: 60vh;
     top: 11%;
@@ -102,12 +102,12 @@
   /* PRIMER PARAFO (MISION) */
   .textMV{
     font-size: 1rem;
-    text-align: left;
+    text-align: justify;
   }
   /* SEGUNDO PARRAFO (VISION) */
   .textMV-V{
     font-size: 1rem;
-    text-align: left;
+    text-align: justify;
     flex: 1 0 auto
   }
   /* Boton */

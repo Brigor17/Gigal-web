@@ -54,6 +54,9 @@
 		justify-content: center;
 		grid-template-columns: repeat(1, 1fr);
 	}
+	.bienvenidos {
+        font-size: 3em;/* Adapta tus estilos aquí para móviles */
+    }
 
 	.opcion_seis {
 		height: 85em;
@@ -89,9 +92,11 @@
 	.contain .pequeño .imag {
 		height: 300px;
 	}
-	#Final{
+
+	#Final {
 		justify-content: flex-start;
 	}
+
 	.Final {
 		justify-content: flex-start;
 		/* Los contenedores se visualizan en vertical */
@@ -102,10 +107,11 @@
 	.Final>div,
 	.Foot {
 		margin-bottom: -3px;
-    
+
 		/* Cubren el elemento #Final en su totalidad sin salirse */
 		width: 100%;
-		box-sizing: border-box; /* Asegura que el padding y el borde no se añadan al ancho total */
+		box-sizing: border-box;
+		/* Asegura que el padding y el borde no se añadan al ancho total */
 		align-items: center;
 	}
 
@@ -116,32 +122,49 @@
 		font-size: calc(3px + 2vmin);
 		/* Ajusta esto según sea necesario */
 	}
-	.FootNav ul{
+
+	.FootNav ul {
 		margin-bottom: 0rem;
-		
+
 	}
+
 	.Final h2 {
 		font-weight: bold;
 		font-size: 180%;
 		color: #221f36
 	}
 
-	.Ubicación ul li a, .LinkR ul li a, .LinkP ul li a {
-    border-bottom: none;
-    color: #221f36;
+	.Ubicación ul li a,
+	.LinkR ul li a,
+	.LinkP ul li a {
+		border-bottom: none;
+		color: #221f36;
 	}
-	.FinalUl{
+
+	.FinalUl {
 		margin-bottom: 0.2rem;
 	}
-	.Noved{
+
+	.Noved {
 		margin-bottom: 2px;
 		margin-left: 1rem;
 		width: 70%;
 	}
+
 	.messageBox {
 		width: fit-content;
 		height: 37px;
-	}	
+	}
+	.Ubicación ul li,
+	.LinkR ul li,
+	.LinkP ul li {
+
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+	}
+
 
 }
 
@@ -241,7 +264,52 @@
 
 /* RESOLUCION DISPOSITIVOS MOVILES */
 @media (max-width: 767px) {
+}
+	/* BANER PRINCIPAL */
+@media (max-width: 768px) {
+		.containerB {
+			flex-direction: column;
+		}
 
+		.logoB {
+			width: 50px;
+			height: 50px;
+		}
+
+		.titleB {
+			font-size: 24px;
+		}
+
+		.subtitleB {
+			font-size: 16px;
+		}
+
+		.buttonB {
+			width: 150px;
+			height: 45px;
+			font-size: 16px;
+		}
+
+		.iconsB {
+			flex-direction: row;
+			justify-content: space-around;
+			gap: 3rem;
+		}
+
+		.iconB {
+			width: 100px;
+			height: 100px;
+		}
+
+		.iconB-label {
+			font-size: 16px;
+		}
+
+		.button1,
+		.button2 {
+			padding: 5px 12px;
+			font-size: 14px;
+		}
 	.top-content {
 		padding: 20px 0 100px 0;
 	}
@@ -369,7 +437,7 @@
 
 	.Cont1 {
 		grid-area: Cont1;
-		width: 100%;
+		width: 50%;
 		height: 100%;
 		position: initial;
 		top: 0px;
@@ -559,11 +627,6 @@
 		position: relative;
 		font-size: 1.2rem;
 	}
-
-	.Crecemos {
-		font-size: 15vw;
-	}
-
 	/* SECCION 1*/
 	.seccion1 {
 		display: flex;
@@ -586,6 +649,12 @@
 	.ContMV {
 		width: 15rem;
 		height: 14rem;
+		top: 54%;
+		left: 15%;
+	}
+	.ContMV:active {
+		width: 16rem;
+		height: 16rem;
 		top: 54%;
 		left: 15%;
 	}
@@ -651,6 +720,7 @@
 
 	.Cont1 {
 		border-radius: 50%;
+
 		/* Forma circular */
 	}
 
@@ -669,58 +739,23 @@
 
 /* PANTALLA COMPLETA */
 @media (min-width: 1200px) {
-	/* .Bienvenido .playful {
-		font-size: 4rem;
-		bottom: 10rem;
-		left: 25rem;
-		position: relative;
-	} */
 
-	/* .bannerPrinc .contBackgP {
-		width: 100vw;
-		height: 80vh;
-	} */
-	/* .BienvenidaP{
-		position: relative;
-		top: 12rem;
+	/* BANER PRINCIPAL */
+	.logoB {
+		right: 15%;
+		top: 8%
 	}
 
-	.Crecemos {
-		font-size: 5rem;
-	}
-	.Bienvenida{
-		height: 46%;
-		width: 51vw;
-		display: inline-flex;
-		align-items: center;
-		padding: 0px;
-		margin: 0;
-		bottom: 0;
-		left: 50%;
-		position: absolute;
-	}
-	.BienB{
-	
-		color: #00ad97;
-		margin: 0px;
-		font-size: 4rem;
-		animation: lightSpeedIn 3s both;
-		font-family: sans-serif;
-	}
-	.BienB:hover{
-		font-size: 5rem;
-		transition: all 0.3s;
-	}
-*/
-
+	/* ----------------------- */
 	/* SECCION 1 */
 	.ContImgVision {
 		width: 60vh;
+		left: 38%
 	}
 
 	.ContMV {
-		left: 16%;
-		top: 50%;
+		left: 22%;
+		top: 40%;
 		height: 20rem;
 	}
 
@@ -799,9 +834,8 @@
 	}
 
 	.CBtnS2 {
-		margin-top: 0.5rem;
 		position: relative;
-		top: 0rem;
+		top: -2rem;
 	}
 
 	.Dcard {
@@ -813,4 +847,13 @@
 		height: 40vh;
 	}
 
+	.Final h2 {
+		font-weight: bold;
+		font-size: 150%;
+		/* Títulos en negrita */
+	}
+	.ContText {
+				top: 30%;
+	  
+	  }
 }

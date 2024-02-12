@@ -26,9 +26,15 @@
     flex: 1;
     display: flex;
     flex-direction: column;
-    margin-right: 10px;
   }
-  
+  .Novedades{
+    padding: 10px;
+  }
+  .Ubicación{
+    padding: 10px;
+    margin-right: 0px;
+
+  }
   .Foot {
     border-top: 2px #2a2f63 solid; 
     display: flex;
@@ -42,6 +48,7 @@
     display: flex;
     list-style-type: none; /* Elimina las viñetas de la lista */
     padding: 0;
+    justify-content: space-between;
   }
   
   .FotNav > li {
@@ -52,8 +59,9 @@
 .LinkP ul li {
 
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: left;
+  justify-content: left;
+  text-align: left;
 }
 /* ESTILOS DE ETIQUETA a */
 .Ubicación ul li a,
@@ -63,11 +71,21 @@
   color: white;
   margin-left: 10PX;
 }
-/* ICONO DE LAS LISTAS */
-.iconoF {
-  /* Añade un margen a la derecha del icono */
-   /* Ajusta esto según sea necesario */
+.Ubicación ul li:hover,
+.LinkR ul li:hover,
+.LinkP ul li:hover {
+  /* Aquí puedes agregar los estilos que quieras para el efecto hover */
+  color: var(--secondary-color);
+  font-size: 1.5rem;
 }
+.Ubicación ul li a:hover,
+.LinkR ul li a:hover,
+.LinkP ul li a:hover {
+  /* Aquí puedes agregar los estilos que quieras para el efecto hover */
+  color: yellow;
+  font-size: 1.5rem;
+}
+/* ICONO DE LAS LISTAS */
 
 /* COLOR DE ICONO DE LISTA */
 
@@ -75,17 +93,25 @@
 .Final h2 {
   color: #2a2f63; 
   margin-right: 10px;
+  text-align: left;
 }
 
 /* COLOR DE ENLACE DE LISTA */
 .FotNav li a{
   color: white; 
   margin-left: 20px ;
+
+}
+.FotNav li a:hover{
+  color: var(--secondary-color); 
+  margin-left: 20px ;
+  font-size: 1.2rem;
+
 }
 
 .Final h2 {
   font-weight: bold;
-  font-size: 100%; /* Títulos en negrita */
+  font-size: 105%; /* Títulos en negrita */
 }
 .Noved{
   color: white;
@@ -216,7 +242,6 @@ button {
   opacity: 0;
   color: white;
   font-size: 10px;
-  text-wrap: nowrap;
   background-color: rgb(200, 33, 33);
   padding: 6px 10px;
   border: 1px solid #924141;

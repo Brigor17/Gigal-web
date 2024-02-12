@@ -15,20 +15,26 @@
     <Link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Seaweed+Script&family=Teko:wght@500&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dynalight&family=Rubik:ital,wght@0,300..900;1,300..900&family=Seaweed+Script&family=Spline+Sans:wght@700&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Archivo+Black&display=swap" rel="stylesheet">
 
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/animate.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <!-- VENTANA MODAL -->
+    <link rel="stylesheet" href="assets/css/modal.css">
+    <!-- ----------------- -->
 
     <link rel="stylesheet" href="assets/css/Banner.css">
+    <link rel="stylesheet" href="assets/css/bienvenidos.css">
     <link rel="stylesheet" href="assets/css/seccion1.css">
     <link rel="stylesheet" href="assets/css/seccion2.css">
     <link rel="stylesheet" href="assets/css/seccion3.css">
     <link rel="stylesheet" href="assets/css/Final.css">
 
+    <!-- -------------ANIMACIONES-------- -->
     <link rel="stylesheet" href="assets/css/animaciones.css">
     <link rel="stylesheet" href="assets/css/animacion-class.css">
 
@@ -41,7 +47,7 @@
 <body>
     <!--PRINCIPAL-->
     <div class="Principal">
-        <!--Menu Desplegable-->
+        <!-- ----------------------Menu Desplegable---------------------------->
         <nav class="sidebar">
 
             <!-- Cierra el Menu desplegable -->
@@ -55,19 +61,35 @@
 
             <ul class="list-unstyled menu-elements">
                 <li class="active">
+                    <!-- ------------------PARA ENLAZAR LAS SECICONES UTILIZA EL ID DE CADA SECCION------------ -->
                     <a class="scroll-link" href="#top-content"><i class="fas fa-home"></i> Home</a>
                 </li>
+                <!-- SECCION 1 -->
                 <li>
                     <a class="scroll-link" href="#section-1"><i class="fas fa-cog"></i> What we do</a>
                 </li>
+                <!-- SECCION 2 -->
                 <li>
                     <a class="scroll-link" href="#section-2"><i class="fas fa-user"></i> About us</a>
                 </li>
+                <!-- SECCION 3 -->
                 <li>
-                    <a class="scroll-link" href="#section-5"><i class="fas fa-pencil-alt"></i> Portfolio</a>
+                    <a class="scroll-link" href="#section-3"><i class="fas fa-pencil-alt"></i> Portfolio</a>
                 </li>
+                <!-- LISTAS CON SUB-LISTAS -->
                 <li>
-                    <a class="scroll-link" href="#section-6"><i class="fas fa-envelope"></i> Contact us</a>
+                    <a href="#otherSections" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"
+                        role="button" aria-controls="otherSections">
+                        <i class="fas fa-envelope"></i>Contactanos
+                    </a>
+                    <ul class="collapse list-unstyled" id="otherSections">
+                        <li>
+                            <a class="scroll-link" href="#section-3">Our projects</a>
+                        </li>
+                        <li>
+                            <a class="scroll-link" href="#section-4">We think that...</a>
+                        </li>
+                    </ul>
                 </li>
                 <li>
                     <a href="#otherSections" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"
@@ -83,6 +105,7 @@
                         </li>
                     </ul>
                 </li>
+                <!-- PARA AGREGAR MAS SECIONES SOLO AGREGAR MAS ELEMENTOS <li> ACA ABAJO -->
             </ul>
 
             <div class="to-top">
@@ -98,27 +121,31 @@
             </div>-->
 
         </nav>
-        <!-- <div class="contLogo">
-            <img src="assets/img/Logo.png" alt="logo Gilgal" class="logoP">
-        </div> -->
+        <!-- ---------------FINAL DEL MENU DESPLEGABLE------------------------------- -->
         <div class="content">
 
             <!-- ABRIR MENU DESPLEGABLE -->
             <a class="btn btn-primary btn-customized open-menu" href="#" role="button">
                 <i class="fas fa-bars"></i>
             </a>
-            <!--Banner Inicio-->
+            <!--CONTENEDOR PRINCIPAL-->
             <div class="secciones">
-                <!-- SOLO PARA DIVIDIR E IDENTIFICAR LAS SECCIONES -->
-                <!-- COMENTAR O ELIMINAR AL FINAL -->
-                <!-- ************* -->
+                <!--------------- VENTANA MODAL--------------------------- -->
+                <dialog id="myModal">
+                    <button class="close">&times;</button>
+                    <img class="modal-image" src="assets/img/modal/Modal.png" alt="Imagen del modal">
+                    <button class="prev"><i class="fa-regular fa-circle-left"></i></button>
+                    <button class="next"><i class="fa-regular fa-circle-right"></i></button>
+                </dialog>
+                <!-- ---------------------------------------------------- -->
                 <!-- SECCION PRINCIPAL -->
                 <section class="Banner" id="Banner">
                     <div class="containerB" id="containerB">
                         <div class="overlayB">
                             <div class="logoB" id="logoB"></div>
                             <div class="titleB" id="titleB">Servicios de coaching</div>
-                            <div class="subtitleB" id="subtitleB">Equipo Técnico para el desarrollo eficiente y Creativo del equipo de
+                            <div class="subtitleB" id="subtitleB">Equipo Técnico para el desarrollo eficiente y Creativo
+                                del equipo de
                                 trabajo Humano. Aumenta tu potencial!</div>
                             <div class="buttonsB" id="buttonsB">
                                 <button class="button1">CONTÁCTANOS</button>
@@ -145,8 +172,15 @@
                         </div>
                     </div>
                 </section>
+                <section class="section-5-container section-container" id="section-5">
+                    <div class="bienvenidos" id="bienvenidos">
+                        <div class="texto" id="texto">BIENVENIDOS A</div>
+                        <div class="div2" id="div2">CASA</div>
+                        <div class="div3" id="div3">Iglesia Gilgal</div>
+                    </div>
+                </section>
                 <!-- SECCION 1 -->
-                <section id="seccion1">
+                <section id="section-1" class="section-1-container section-container">
                     <div class="seccion1">
                         <div class="ContImgVision" id="ContImgVision">
                             <div class="ImgMV" id="ImgMv"></div>
@@ -154,7 +188,7 @@
                         <div class="ContMV" id="ContMv">
                             <div class="ContMV-Mis">
                                 <div class="titMV">
-                                    <p>Nuestra Mision</p>
+                                    <p class="titulMV">Nuestra Mision</p>
                                 </div>
                                 <div class="textMV">
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
@@ -187,7 +221,7 @@
                     </div>
                 </section>
                 <!-- SECCION 2 -->
-                <section>
+                <section class="section-2-container section-container section-container-gray-bg" id="section-2">
                     <div class="seccion2" id="seccion2">
                         <div class="flexS2">
                             <div class="ContS2">
@@ -215,7 +249,7 @@
                                 <div class="Dcard" id="Dcard">
                                     <div class="DiconB">
                                         <div class="icon1">
-                                            <i class="fas fa-2x fa-book-open"></i>
+                                            <i class="fa-2x fa-regular fa-heart"></i>
                                         </div class="icon1">
                                     </div>
                                     <p class="Dtitle">Donaciones y Diezmos</p>
@@ -226,20 +260,33 @@
                     </div>
                 </section>
                 <!-- SECCION 3 -->
-                <section id="seccion3">
+                <section class="section-3-container section-container" id="section-3">
                     <div class="seccion3">
-
+                        <div class="texto">Texto 1</div>
+                        <div class="texto grande">Texto 2</div>
+                        <div class="texto">Texto 3</div>
+                        <div class="carrusel" style="width: 50%; height: 50%;">
+                            <div class="carrusel-imagenes">
+                              <img src="assets/img/carrusels3/imagen1.png" class="imagen-activa">
+                              <img src="assets/img/carrusels3/imagen2.png">
+                              <img src="assets/img/carrusels3/imagen3.png">
+                              <!-- Agrega más imágenes según sea necesario -->
+                            </div>
+                            <button class="carrusel-btn carrusel-btn-atras"><i class="fa-regular fa-circle-left"></i></button>
+                            <button class="carrusel-btn carrusel-btn-adelante"><i class="fa-regular fa-circle-right"></i></button>
+                          </div>
                     </div>
-                </section>
+                    </section>
+
                 <!-------------------------- SECCION FINAL -------------------------->
-                <section id="Final">
+                <section class="section-4-container section-container" id="Final">
                     <div class="Final">
                         <div class="Ubicación">
                             <h2>Ubicanos</h2>
                             <ul class="FinalUl">
-                                <li><i class="fas fa-arrow-circle-right"></i><a href="#">Elemento 1</a></li>
-                                <li><i class="fas fa-arrow-circle-right"></i><a href="#">Elemento 2</a></li>
-                                <li><i class="fas fa-arrow-circle-right"></i><a href="#">Elemento 3</a></li>
+                                <li><i class="fas fa-location-dot"></i><a href="#">Ubicación</a></li>
+                                <li><i class="fas fa-phone"></i><a href="#">telefono</a></li>
+                                <li><i class="fa-regular fa-envelope"></i><a href="#">Correo</a></li>
                                 <li>
                                     <div class="parent">
                                         <div class="child child-1">
@@ -321,6 +368,8 @@
     <!-- Javascript -->
     <script src="assets/js/Observador-Animaciones.js"></script>
     <script src="assets/js/API-Observador.js"></script>
+    <script src="assets/js/modal.js"></script>
+    <script src="assets/js/CarruselS3.js"></script>
     <script src="assets/js/jquery-3.3.1.min.js"></script>
     <script src="assets/js/jquery-migrate-3.0.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
