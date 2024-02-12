@@ -66,15 +66,15 @@
                 </li>
                 <!-- SECCION 1 -->
                 <li>
-                    <a class="scroll-link" href="#section-1"><i class="fas fa-cog"></i> What we do</a>
+                    <a class="scroll-link" href="#section-1"><i class="fas fa-cog"></i> Seccion 1</a>
                 </li>
                 <!-- SECCION 2 -->
                 <li>
-                    <a class="scroll-link" href="#section-2"><i class="fas fa-user"></i> About us</a>
+                    <a class="scroll-link" href="#section-2"><i class="fas fa-user"></i> Seccion 2</a>
                 </li>
                 <!-- SECCION 3 -->
                 <li>
-                    <a class="scroll-link" href="#section-3"><i class="fas fa-pencil-alt"></i> Portfolio</a>
+                    <a class="scroll-link" href="#section-3"><i class="fas fa-pencil-alt"></i> Seccion 3</a>
                 </li>
                 <!-- LISTAS CON SUB-LISTAS -->
                 <li>
@@ -84,10 +84,10 @@
                     </a>
                     <ul class="collapse list-unstyled" id="otherSections">
                         <li>
-                            <a class="scroll-link" href="#section-3">Our projects</a>
+                            <a class="scroll-link" href="#section-3">Seccion 3</a>
                         </li>
                         <li>
-                            <a class="scroll-link" href="#section-4">We think that...</a>
+                            <a class="scroll-link" href="#section-4">Seccion Final</a>
                         </li>
                     </ul>
                 </li>
@@ -98,10 +98,10 @@
                     </a>
                     <ul class="collapse list-unstyled" id="otherSections">
                         <li>
-                            <a class="scroll-link" href="#section-3">Our projects</a>
+                            <a class="scroll-link" href="#section-3">Seccion 3</a>
                         </li>
                         <li>
-                            <a class="scroll-link" href="#section-4">We think that...</a>
+                            <a class="scroll-link" href="#section-4">Seccion Final</a>
                         </li>
                     </ul>
                 </li>
@@ -172,6 +172,7 @@
                         </div>
                     </div>
                 </section>
+                <!-- SECCION BIENVENIDA -->
                 <section class="section-5-container section-container" id="section-5">
                     <div class="bienvenidos" id="bienvenidos">
                         <div class="texto" id="texto">BIENVENIDOS A</div>
@@ -182,6 +183,12 @@
                 <!-- SECCION 1 -->
                 <section id="section-1" class="section-1-container section-container">
                     <div class="seccion1">
+                        <div class="TextoS1" id="TextS1">
+                            <h1>Iglesia Gilgal</h1>
+                        </div>
+                        <div class="LogoS1" id="LogoS1">
+                            <img src="assets/img/LogoGilgal.png" alt="Logo Gilgal">
+                        </div>
                         <div class="ContImgVision" id="ContImgVision">
                             <div class="ImgMV" id="ImgMv"></div>
                         </div>
@@ -261,23 +268,58 @@
                 </section>
                 <!-- SECCION 3 -->
                 <section class="section-3-container section-container" id="section-3">
-                    <div class="seccion3">
-                        <div class="texto">Texto 1</div>
-                        <div class="texto grande">Texto 2</div>
-                        <div class="texto">Texto 3</div>
-                        <div class="carrusel" style="width: 50%; height: 50%;">
-                            <div class="carrusel-imagenes">
-                              <img src="assets/img/carrusels3/imagen1.png" class="imagen-activa">
-                              <img src="assets/img/carrusels3/imagen2.png">
-                              <img src="assets/img/carrusels3/imagen3.png">
-                              <!-- Agrega más imágenes según sea necesario -->
+                    <div class="seccion3" id="seccion3">
+                        <div class="texto1" id="texto1">LA IGLESIA ERES TU</div>
+                        <div class="textogrande" id="textogrande">No te pierdas nada de lo que sucede en Más Vida.</div>
+                        <div class="texto2" id="texto2">Te invitamos a seguir siendo parte de todas las actividades que tenemos como iglesia</div>
+                        <div class="carrusel">
+                            <div class="containerC">
+                                <input type="radio" name="slider" id="item-1" checked>
+                                <input type="radio" name="slider" id="item-2">
+                                <input type="radio" name="slider" id="item-3">
+                              <div class="cards">
+                                <label class="cardC" for="item-1" id="song-1">
+                                  <img src="assets/img/carrusels3/imagen1.png" alt="Imagen">
+                                </label>
+                                <label class="cardC" for="item-2" id="song-2">
+                                    <img src="assets/img/carrusels3/imagen2.png" alt="Imagen"></label>
+                                <label class="cardC" for="item-3" id="song-3">
+                                    <img src="assets/img/carrusels3/imagen3.png" alt="Imagen"></label>
+                              </div>
+                              <div class="player">
+                                <div class="upper-part">
+                                  <div class="play-icon">
+                                    <i class="fa-solid fa-earth-americas"></i>
+                                  </div>
+                                  <div class="info-area" id="test">
+                                    <label class="song-info" id="song-info-1">
+                                      <div class="titleC">Titulo Imagen</div>
+                                      <div class="sub-line">
+                                        <div class="subtitle">Subtitulo Imagen</div>
+                                        <div class="time">Numero indicativo</div>
+                                      </div>
+                                    </label>
+                                    <label class="song-info" id="song-info-2">
+                                      <div class="titleC">Words Remain</div>
+                                      <div class="sub-line">
+                                        <div class="subtitle">Moderator</div>
+                                        <div class="time">2</div>
+                                      </div>
+                                    </label>
+                                    <label class="song-info" id="song-info-3">
+                                      <div class="titleC">Falling Out</div>
+                                      <div class="sub-line">
+                                        <div class="subtitle">Otzeki</div>
+                                        <div class="time">3</div>
+                                      </div>
+                                    </label>
+                                  </div>
+                                </div>
+                              </div>
                             </div>
-                            <button class="carrusel-btn carrusel-btn-atras"><i class="fa-regular fa-circle-left"></i></button>
-                            <button class="carrusel-btn carrusel-btn-adelante"><i class="fa-regular fa-circle-right"></i></button>
-                          </div>
+                        </div>
                     </div>
-                    </section>
-
+                </section>
                 <!-------------------------- SECCION FINAL -------------------------->
                 <section class="section-4-container section-container" id="Final">
                     <div class="Final">
@@ -289,12 +331,7 @@
                                 <li><i class="fa-regular fa-envelope"></i><a href="#">Correo</a></li>
                                 <li>
                                     <div class="parent">
-                                        <div class="child child-1">
-                                            <button class="button btn-1">
-                                                <i class="fa-brands fa-twitter" height="1em" viewBox="0 0 512 512"
-                                                    fill="#1e90ff"></i>
-                                            </button>
-                                        </div>
+
                                         <div class="child child-2">
                                             <button class="button btn-2">
                                                 <i class="fa-brands fa-instagram"></i>

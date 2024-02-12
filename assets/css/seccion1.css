@@ -1,214 +1,247 @@
 .seccion1 {
-    size: min(width 100% 950px);
-    height: 100vh;
-    /* *************************** */
-    background: linear-gradient(to bottom, var(--secondary-color) 50%, white 50%);
-    /* COLOR DEL FONDO DE PANTALLA */
-    position: relative;
+  size: min(width 100% 950px);
+  height: 100vh;
+  /* *************************** */
+  background: linear-gradient(to bottom, var(--secondary-color) 50%, white 50%);
+  /* COLOR DEL FONDO DE PANTALLA */
+  position: relative;
 
 }
+
+/* TEXTO Y LOGO*/
+.TextoS1 {
+  position: relative;
+  top: 15%;
+  left: 5%;
+  width: 14rem;
+  max-width: 14rem;
+  text-align: center;
+}
+
+.LogoS1 {
+  width: 25%;
+  height: 20%;
+  position: relative;
+  left: 73%;
+}
+
+.LogoS1 img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+
+/* +++++++++++++++++++++++++++++++++ */
 /* CONTENEDOR IMAGEN CIRCULAR */
 .ContImgVision {
-    border-radius: 50%;
-    border: var(--secondary-color) solid 3px;
-    width: 60vw;
-    height: 60vh;
-    top: 11%;
-    left: 30%;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    opacity: 0;
-    transition: opacity 0.1s ease-out;
-    /* GIRO Y DESVANECIDO */
+  border-radius: 50%;
+  border: var(--secondary-color) solid 3px;
+  width: 60vw;
+  height: 60vh;
+  top: 11%;
+  left: 30%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.1s ease-out;
+  /* GIRO Y DESVANECIDO */
 
-    /* -webkit-animation: rollIn 5s ease-out both;
+  /* -webkit-animation: rollIn 5s ease-out both;
     animation: rollIn 3s ease-out both; */
 }
 
-.ImgMV{
-    width: 100%;
-    height: 100%;
-    position: relative;
-    background-image: url(../img/seccion1/Circular1.png);
-    border-radius: 50%;
+.ImgMV {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-image: url(../img/seccion1/Circular1.png);
+  border-radius: 50%;
 
 }
-/* CARTA DE MISION Y VISION INTERCAMBIABLE */
-    /* CONTENEDOR */
-.ContMV {
-    color: #1b1b1b;
-    width: 23rem;
-    height: 22rem;
-    position: relative;
-    top: 45%;
-    left: 16%;
-    transform: translate(-50%, -50%);
-    outline: 6px solid #f5f5f5;
-    border-radius: 8px;
-    line-height: 150%;
-    padding: 0.4rem;
-    background: #ffffff;
-    background-blend-mode: multiply;
-    background: linear-gradient(to top, #d3cfcb, #fffcf2);
-    transition: background-color 1s ease-in-out;
-    overflow: hidden;
-    /* Para que el elemento sea invisible antes de ser animado y observado */
-    opacity: 0;
-    transition: opacity 0.1s ease-out;
-  }
-  /* CONTENEDOR MISION */
-  .ContMV-Mis {
-    left: 0;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
-    transition: transform 1s cubic-bezier(0.785, 0.135, 0.150, 0.860);
-  }
-  /* CONTENEDOR VISION */
-  .ContMV-Vis {
-    top: 0rem;
-    PADDING: 0.3rem;
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
-    transform: translateX(120%);
-    transition: transform 1s cubic-bezier(0.785, 0.135, 0.150, 0.860);
-  }
-  
-  
-  /*Text*/
-  /* TITULOS */
-  .titMV {
-    font-size: 1.2rem;
-    font-weight: bold;
-    flex: 0 0 auto;
-    top: 0vh;
-    position: relative;
-  }
-  /*Text divider*/
-  .titMV::after {
-    content: "";
-    display: block;
-    width: 50%;
-    border-radius: 50%;
-    height: 2px;
-    margin: 2px auto;
-    background-color: #1b1b1b;
-  }
-  /* PRIMER PARAFO (MISION) */
-  .textMV{
-    font-size: 1rem;
-    text-align: justify;
-  }
-  /* SEGUNDO PARRAFO (VISION) */
-  .textMV-V{
-    font-size: 1rem;
-    text-align: justify;
-    flex: 1 0 auto
-  }
-  /* Boton */
 
-  .BtnVis {
-    position: relative;
-    margin: 0;
-    padding: 0.8em 1em;
-    outline: none;
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    border: none;
-    text-transform: uppercase;
-    background-color: #333;
-    border-radius: 10px;
-    color: #fff;
-    font-weight: 300;
-    font-size: 18px;
-    font-family: inherit;
-    z-index: 0;
-    overflow: hidden;
-    transition: all 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
+/* CARTA DE MISION Y VISION INTERCAMBIABLE */
+/* CONTENEDOR */
+.ContMV {
+  color: #1b1b1b;
+  width: 23rem;
+  height: 22rem;
+  position: relative;
+  top: 10%;
+  left: 16%;
+  transform: translate(-50%, -50%);
+  outline: 6px solid #f5f5f5;
+  border-radius: 8px;
+  line-height: 150%;
+  padding: 0.4rem;
+  background: #ffffff;
+  background-blend-mode: multiply;
+  background: linear-gradient(to top, #d3cfcb, #fffcf2);
+  transition: background-color 1s ease-in-out;
+  overflow: hidden;
+  /* Para que el elemento sea invisible antes de ser animado y observado */
+  opacity: 0;
+  transition: opacity 0.1s ease-out;
+}
+
+/* CONTENEDOR MISION */
+.ContMV-Mis {
+  left: 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  transition: transform 1s cubic-bezier(0.785, 0.135, 0.150, 0.860);
+}
+
+/* CONTENEDOR VISION */
+.ContMV-Vis {
+  top: 0rem;
+  PADDING: 0.3rem;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  transform: translateX(120%);
+  transition: transform 1s cubic-bezier(0.785, 0.135, 0.150, 0.860);
+}
+
+
+/*Text*/
+/* TITULOS */
+.titMV {
+  font-size: 1.2rem;
+  font-weight: bold;
+  flex: 0 0 auto;
+  top: 0vh;
+  position: relative;
+}
+
+/*Text divider*/
+.titMV::after {
+  content: "";
+  display: block;
+  width: 50%;
+  border-radius: 50%;
+  height: 2px;
+  margin: 2px auto;
+  background-color: #1b1b1b;
+}
+
+/* PRIMER PARAFO (MISION) */
+.textMV {
+  font-size: 1rem;
+  text-align: justify;
+}
+
+/* SEGUNDO PARRAFO (VISION) */
+.textMV-V {
+  font-size: 1rem;
+  text-align: justify;
+  flex: 1 0 auto
+}
+
+/* Boton */
+
+.BtnVis {
+  position: relative;
+  margin: 0;
+  padding: 0.8em 1em;
+  outline: none;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+  text-transform: uppercase;
+  background-color: #333;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: 300;
+  font-size: 18px;
+  font-family: inherit;
+  z-index: 0;
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
+}
+
+.BtnVis:hover {
+  animation: sh0 0.5s ease-in-out both;
+}
+
+@keyframes sh0 {
+  0% {
+    transform: rotate(0deg) translate3d(0, 0, 0);
   }
-  
-  .BtnVis:hover {
-    animation: sh0 0.5s ease-in-out both;
+
+  25% {
+    transform: rotate(7deg) translate3d(0, 0, 0);
   }
-  
-  @keyframes sh0 {
-    0% {
-      transform: rotate(0deg) translate3d(0, 0, 0);
-    }
-  
-    25% {
-      transform: rotate(7deg) translate3d(0, 0, 0);
-    }
-  
-    50% {
-      transform: rotate(-7deg) translate3d(0, 0, 0);
-    }
-  
-    75% {
-      transform: rotate(1deg) translate3d(0, 0, 0);
-    }
-  
-    100% {
-      transform: rotate(0deg) translate3d(0, 0, 0);
-    }
+
+  50% {
+    transform: rotate(-7deg) translate3d(0, 0, 0);
   }
-  
-  .BtnVis:hover .spanV {
-    animation: storm 0.7s ease-in-out both;
-    animation-delay: 0.06s;
+
+  75% {
+    transform: rotate(1deg) translate3d(0, 0, 0);
   }
-  
-  .BtnVis::before,
-  .BtnVis::after {
-    content: '';
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    background: #fff;
-    opacity: 0;
-    transition: transform 0.15s cubic-bezier(0.02, 0.01, 0.47, 1), opacity 0.15s cubic-bezier(0.02, 0.01, 0.47, 1);
-    z-index: -1;
-    transform: translate(100%, -25%) translate3d(0, 0, 0);
+
+  100% {
+    transform: rotate(0deg) translate3d(0, 0, 0);
   }
-  
-  .BtnVis:hover::before,
-  .BtnVis:hover::after {
-    opacity: 0.15;
-    transition: transform 0.2s cubic-bezier(0.02, 0.01, 0.47, 1), opacity 0.2s cubic-bezier(0.02, 0.01, 0.47, 1);
-  }
-  
-  .BtnVis:hover::before {
-    transform: translate3d(50%, 0, 0) scale(0.9);
-  }
-  
-  .BtnVis:hover::after {
-    transform: translate(50%, 0) scale(1.1);
-  }
-  
-  
-  
-  /*Hover*/
-  .ContMV:hover {
-    background-color: #1b1b1b25;
-  }
-  
-  .ContMV:hover .ContMV-Mis {
-    transform: translateX(-100%);
-  }
-  
-  .ContMV:hover .ContMV-Vis {
-    transform: translateX(0);
-  }
-  
-  
+}
+
+.BtnVis:hover .spanV {
+  animation: storm 0.7s ease-in-out both;
+  animation-delay: 0.06s;
+}
+
+.BtnVis::before,
+.BtnVis::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #fff;
+  opacity: 0;
+  transition: transform 0.15s cubic-bezier(0.02, 0.01, 0.47, 1), opacity 0.15s cubic-bezier(0.02, 0.01, 0.47, 1);
+  z-index: -1;
+  transform: translate(100%, -25%) translate3d(0, 0, 0);
+}
+
+.BtnVis:hover::before,
+.BtnVis:hover::after {
+  opacity: 0.15;
+  transition: transform 0.2s cubic-bezier(0.02, 0.01, 0.47, 1), opacity 0.2s cubic-bezier(0.02, 0.01, 0.47, 1);
+}
+
+.BtnVis:hover::before {
+  transform: translate3d(50%, 0, 0) scale(0.9);
+}
+
+.BtnVis:hover::after {
+  transform: translate(50%, 0) scale(1.1);
+}
+
+
+
+/*Hover*/
+.ContMV:hover {
+  background-color: #1b1b1b25;
+}
+
+.ContMV:hover .ContMV-Mis {
+  transform: translateX(-100%);
+}
+
+.ContMV:hover .ContMV-Vis {
+  transform: translateX(0);
+}

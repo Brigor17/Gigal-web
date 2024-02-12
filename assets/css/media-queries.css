@@ -164,6 +164,17 @@
 		justify-content: center;
 		text-align: center;
 	}
+	.parent {
+		width: 100%;
+		height: 100%;
+		display: flex;
+		position: initial;
+		justify-content: center;
+		align-items: center;
+	  }
+	  .parent i {
+		font-size: 23px; /* Cambia esto al tamaño que desees */
+	}
 
 
 }
@@ -755,7 +766,7 @@
 
 	.ContMV {
 		left: 22%;
-		top: 40%;
+		top: 8%;
 		height: 20rem;
 	}
 

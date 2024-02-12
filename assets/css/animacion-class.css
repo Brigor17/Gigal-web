@@ -9,23 +9,45 @@
     animation: roll-in-right 3s ease-out 1.2s both;
     opacity: 1;
 }
+
 .typing {
     -webkit-animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
     animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
     opacity: 1;
 }
+
 .scale-up-horizontal-right {
-    animation: scale-up-horizontal-right 1.5s linear 1s infinite 
+    animation: scale-up-horizontal-right 1.5s linear 1s infinite
 }
 
 .shadow-drop-center {
     animation: shadow-drop-center 3s linear infinite
 }
-.scale-up-center{animation:scale-up-center 2s; } 
+
+.tracking-in-expand-forward-bottom {
+    animation: tracking-in-expand-forward-bottom 1.55s linear both;
+    opacity: 1;
+}
+
+.scale-up-center {
+    animation: scale-up-center 2s;
+}
 
 .vibrate {
     animation: vibrate 1.5s linear forwards
 }
+
+.blur-in {
+    animation: blur-in 2s linear both;
+    opacity: 1;
+}
+
+.blur-in-expand {
+    animation: blur-in-expand 1s linear both;
+    opacity: 1;
+
+}
+
 .roll-in-right2 {
     -webkit-animation: roll-in-right 3s ease-out 4s both;
     animation: roll-in-right 3s ease-out 4s both;
@@ -49,25 +71,30 @@
     animation: zoomInUp 3s both 1.5s ease-in-out;
     opacity: 1;
 }
+
 .zoomInUp2 {
     -webkit-animation: zoomInUp;
     animation: zoomInUp 3.5s both 2.5s ease-in-out;
     opacity: 1;
 }
+
 .zoomInDown {
     -webkit-animation: zoomInDown 3s both 1.3s ease-in-out;
     animation: zoomInDown 3s both 1.3s ease-in-out;
     opacity: 1;
 }
+
 .zoomInRight {
     -webkit-animation: zoomInDown 3s both 1.3s ease-in-out;
     animation: zoomInDown 3s both 2s ease-in-out;
     opacity: 1;
 }
-.aparecer{
+
+.aparecer {
     animation: aparecer 2s forwards;
 }
+
 .hinge {
     -webkit-animation: hinge;
     animation: hinge 3s forwards;
-  }
+}

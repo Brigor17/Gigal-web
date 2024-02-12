@@ -1,31 +1,35 @@
 // Selecciona los elementos que deseas animar POR CLASES CSS
-let elementos = document.querySelectorAll('.ContImgVision, .logoB, .texto, .div2, .div3, .ContMV, .ImgMV, .Cont1, .Cont2, .Cont3, .ContText, .seccion2, .Dcard, .titleB, .subtitleB, .containerB, .iconB');
+let elementos = document.querySelectorAll('.ContImgVision, .seccion3,.texto1, .texto2, .textogrande, .logoB, .texto, .div2, .div3, .ContMV, .ImgMV, .Cont1, .Cont2, .Cont3, .ContText, .seccion2, .Dcard, .titleB, .subtitleB, .containerB, .iconB');
 
 // Define las clases de animación AGREGAR EL ID SEGUIDO DE LA ANIMACION A UTILIZAR
 let clasesAnimacion = {
   'containerB': 'fondo',
-  'texto':'typing',
-  'div2':'scale-up-horizontal-right',
-  'div3':'scale-up-center',
+  "seccion3": 'aparecer',
+  'texto': 'typing',
+  'texto1': 'blur-in',
+  'texto2': 'tracking-in-expand-forward-bottom',
+  'textogrande': 'blur-in-expand',
+  'div2': 'scale-up-horizontal-right',
+  'div3': 'scale-up-center',
   'ContImgVision': 'roll-in-right',
   'ContMv': 'roll-in-left',
   'ImgMv': 'ImgC',
-  'Cont1':'zoomInLeft',
+  'Cont1': 'zoomInLeft',
   'Cont2': 'zoomInUp',
   'Cont3': 'zoomInDown',
-  'ContText':'zoomInRight',
-  'seccion2':'aparecer',
+  'ContText': 'zoomInRight',
+  'seccion2': 'aparecer',
   'Dcard': 'lightSpeedIn',
   'titleB': 'lightSpeedIn',
   'subtitleB': 'zoomInDown',
   'logoB': 'zoomInLeft',
   'iconBP': 'roll-in-left',
   'iconBI': 'zoomInUp',
-  'iconC':'zoomInUp2',
-  'iconH':'roll-in-right2',
-  
+  'iconC': 'zoomInUp2',
+  'iconH': 'roll-in-right2',
 
-  
+
+
 };
 
 // Configura las opciones del observador

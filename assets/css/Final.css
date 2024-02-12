@@ -36,7 +36,7 @@
 
   }
   .Foot {
-    border-top: 2px #2a2f63 solid; 
+    border-top: 2px #2a2f632a solid; 
     display: flex;
     justify-content: flex-end;
     
@@ -124,9 +124,16 @@
   width: 100%;
   height: 100%;
   display: flex;
+  position: relative;
+  top: -23rem;
+  left: 50PX;
   justify-content: center;
   align-items: center;
 }
+.parent i {
+    font-size: 42px; /* Cambia esto al tamaño que desees */
+}
+
 
 .child {
   width: 50px;
