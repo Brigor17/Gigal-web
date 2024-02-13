@@ -96,6 +96,12 @@
   height: 80%;
   top: 20%;
   animation-delay: 2s;
+}
+.ContText:hover{
+  transform: scale(1.1);
+  top: 27%;
+    left: 6%;
+  transition: all 1s;
 
 }
 
@@ -109,6 +115,7 @@
   font-size: clamp(0.2rem, 0.8rem, 1rem);
   text-align: justify;
   height: 100%;
+  font-weight: bold;
   overflow: auto;
   margin: 0%;
 }

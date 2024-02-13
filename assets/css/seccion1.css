@@ -12,10 +12,15 @@
 .TextoS1 {
   position: relative;
   top: 15%;
-  left: 5%;
+  left: 10%;
   width: 14rem;
   max-width: 14rem;
   text-align: center;
+  color: white;
+}
+.TextoS1 h1 {
+  color: white;
+  font-weight: 400;
 }
 
 .LogoS1 {
@@ -69,13 +74,13 @@
   width: 23rem;
   height: 22rem;
   position: relative;
-  top: 10%;
-  left: 16%;
+  top: 39%;
+  left: -38%;
   transform: translate(-50%, -50%);
   outline: 6px solid #f5f5f5;
   border-radius: 8px;
   line-height: 150%;
-  padding: 0.4rem;
+
   background: #ffffff;
   background-blend-mode: multiply;
   background: linear-gradient(to top, #d3cfcb, #fffcf2);

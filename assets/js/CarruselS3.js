@@ -1,3 +1,3 @@
 $('input').on('change', function() {
-  $('body').toggleClass('blue');
+  $('section').toggleClass('blue');
 });
